@@ -25,7 +25,7 @@ const footerNavigation = {
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy-policy' },
-    { name: 'Terms & Conditions', href: '/terms' },
+    { name: 'Terms & Conditions', href: '/terms-and-conditions' },
     { name: 'Disclaimer', href: '/disclaimer' },
   ],
 };
@@ -45,7 +45,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6">
               <motion.a
-                href="https://wa.me/your-number"
+                href="http://wa.me/+917989488080"
                 whileHover={{ scale: 1.1 }}
                 className="text-secondary-400 hover:text-white"
               >
@@ -55,7 +55,7 @@ export default function Footer() {
                 </svg>
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/your-profile"
+                href="https://www.linkedin.com/in/ca-santhosh-veerlapati/"
                 whileHover={{ scale: 1.1 }}
                 className="text-secondary-400 hover:text-white"
               >

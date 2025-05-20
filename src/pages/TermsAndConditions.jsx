@@ -33,7 +33,7 @@ export default function TermsAndConditions() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Introduction</h3>
               <p>
-                These Terms and Conditions govern your use of the website and services provided by CA VEERLAPATI Santhosh. By accessing our website or using our services, you agree to comply with and be bound by these terms.
+                These Terms and Conditions ("Terms") govern your access to and use of the website and services provided by CA VEERLAPATI Santhosh ("we," "our," or "us"). By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.
               </p>
             </motion.div>
 
@@ -44,8 +44,12 @@ export default function TermsAndConditions() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Services Offered</h3>
+              <p className="mb-4">
+                We provide professional accounting, taxation, audit, and business advisory services as described on our website. The specific scope of services provided to each client will be outlined in a separate engagement letter or service agreement. Our services are provided based on the information and documentation supplied by you.
+              </p>
+              <h4 className="text-lg font-medium text-secondary-800 mb-2 mt-4">Nature of Advice</h4>
               <p>
-                We provide professional accounting, taxation, audit, and business advisory services as described on our website. The scope of services for each client will be defined in a separate engagement letter.
+                Any information or advice provided on this website is for general guidance only and does not constitute professional advice. Professional advice is provided through a formal engagement process, which includes a thorough understanding of your specific circumstances.
               </p>
             </motion.div>
 
@@ -56,9 +60,15 @@ export default function TermsAndConditions() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Client Responsibilities</h3>
-              <p>
-                Clients are responsible for providing accurate and complete information necessary for the provision of services. Delays or inaccuracies in information may impact the services provided.
+              <p className="mb-4">
+                By using our Service, you agree to:
               </p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>Provide accurate, complete, and timely information and documentation required for the provision of services.</li>
+                <li>Cooperate with us in a timely and efficient manner.</li>
+                <li>Inform us of any changes in your circumstances that may affect the services provided.</li>
+                <li>Comply with all applicable laws and regulations.</li>
+              </ul>
             </motion.div>
 
              <motion.div
@@ -69,7 +79,7 @@ export default function TermsAndConditions() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Confidentiality</h3>
               <p>
-                We maintain strict confidentiality regarding all client information. Your personal and financial data will be handled with the utmost care and in accordance with applicable laws and professional standards.
+                We are committed to maintaining the confidentiality of your information. All non-public information shared with us in the course of our engagement will be treated as confidential and will not be disclosed to third parties without your consent, except as required by law or professional standards. You also agree to keep confidential any proprietary information you may gain access to through the use of our Service.
               </p>
             </motion.div>
 
@@ -81,7 +91,10 @@ export default function TermsAndConditions() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Limitation of Liability</h3>
               <p>
-                Our liability for any errors or omissions in the services provided is limited to the extent permitted by law and as outlined in our engagement letter. We are not liable for any indirect or consequential damages.
+                To the fullest extent permitted by applicable law, in no event shall CA VEERLAPATI Santhosh, its affiliates, directors, employees, or agents be liable for any indirect, punitive, special, incidental, or consequential damages whatsoever arising out of or in connection with the use of this website or services, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
+              </p>
+              <p className="mt-4">
+                Our total liability to you for any damages arising out of or related to your use of the Service will not exceed the amount paid by you, if any, for accessing the Service, or [Specify a maximum liability amount, e.g., the fee paid for the specific service], whichever is less.
               </p>
             </motion.div>
 
@@ -93,7 +106,7 @@ export default function TermsAndConditions() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Governing Law</h3>
               <p>
-                These Terms and Conditions shall be governed by and construed in accordance with the laws of India, and any disputes shall be subject to the exclusive jurisdiction of the courts in Nalgonda, Telangana.
+                These Terms shall be governed and construed in accordance with the laws of [Your Jurisdiction, e.g., India], without regard to its conflict of law provisions.
               </p>
             </motion.div>
 
@@ -105,7 +118,7 @@ export default function TermsAndConditions() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Changes to Terms</h3>
               <p>
-                We reserve the right to update or modify these Terms and Conditions at any time without prior notice. Your continued use of our website and services after any such changes constitutes your acceptance of the new terms.
+                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
               </p>
             </motion.div>
 
@@ -117,7 +130,7 @@ export default function TermsAndConditions() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Contact Us</h3>
               <p>
-                If you have any questions about these Terms and Conditions, please contact us using the information on our Contact page.
+                If you have any questions about these Terms and Conditions, please contact us using the information on our Contact page or by email at [Your Contact Email Address].
               </p>
             </motion.div>
           </div>

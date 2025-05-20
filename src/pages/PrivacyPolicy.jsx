@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Introduction</h3>
               <p>
-                This Privacy Policy describes how CA VEERLAPATI Santhosh collects, uses, and protects your personal information when you visit our website.
+                This Privacy Policy describes how CA VEERLAPATI Santhosh collects, uses, and protects your personal information when you visit our website and use our services. By using our website or services, you agree to the collection and use of information in accordance with this policy.
               </p>
             </motion.div>
 
@@ -44,8 +44,23 @@ export default function PrivacyPolicy() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Information We Collect</h3>
+              <p className="mb-4">
+                We collect several types of information for various purposes to provide and improve our Service to you.
+              </p>
+              <h4 className="text-lg font-medium text-secondary-800 mb-2">Personal Data</h4>
+              <p className="mb-4">
+                While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
+              </p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Address</li>
+                <li>Any other information you voluntarily provide when contacting us or booking an appointment.</li>
+              </ul>
+              <h4 className="text-lg font-medium text-secondary-800 mb-2 mt-4">Usage Data</h4>
               <p>
-                We collect information you provide directly to us, such as your name, email address, phone number, and any other information you choose to provide when contacting us or booking an appointment. We may also collect non-personal information automatically as you navigate the site.
+                We may also collect information how the Service is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
               </p>
             </motion.div>
 
@@ -56,9 +71,19 @@ export default function PrivacyPolicy() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">How We Use Your Information</h3>
-              <p>
-                We use the information collected to provide and improve our services, respond to your inquiries, schedule appointments, and communicate with you. We may also use non-personal information for website analytics and improvement.
+              <p className="mb-4">
+                CA VEERLAPATI Santhosh uses the collected data for various purposes:
               </p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>To provide and maintain the Service</li>
+                <li>To notify you about changes to our Service</li>
+                <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+                <li>To provide customer care and support</li>
+                <li>To provide analysis or valuable information so that we can improve the Service</li>
+                <li>To monitor the usage of the Service</li>
+                <li>To detect, prevent and address technical issues</li>
+                <li>To respond to your inquiries and appointment requests.</li>
+              </ul>
             </motion.div>
 
              <motion.div
@@ -68,9 +93,17 @@ export default function PrivacyPolicy() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Information Sharing and Disclosure</h3>
-              <p>
-                We do not sell, trade, or otherwise transfer your personal information to outside parties without your consent, except to trusted third parties who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential. We may also release information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety.
+              <p className="mb-4">
+                We may share your information in the following situations:
               </p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>**With Service Providers:** We may share your personal information with service providers to monitor and analyze the use of our Service, to contact you.</li>
+                <li>**For Business Transfers:** We may share or transfer your personal information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+                <li>**With Affiliates:** We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include our parent company and any other subsidiaries, joint venture partners or other companies that we control or that are under common control with us.</li>
+                <li>**With Business Partners:** We may share your information with our business partners to offer you certain products, services or promotions.</li>
+                <li>**With other users:** when you share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
+                <li>**With your consent:** We may disclose your personal information for any other purpose with your consent.</li>
+              </ul>
             </motion.div>
 
              <motion.div
@@ -81,7 +114,7 @@ export default function PrivacyPolicy() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Data Security</h3>
               <p>
-                We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information.
+                The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
               </p>
             </motion.div>
 
@@ -105,7 +138,7 @@ export default function PrivacyPolicy() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Changes to our Privacy Policy</h3>
               <p>
-                If we decide to change our privacy policy, we will post those changes on this page.
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the "effective date" at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
               </p>
             </motion.div>
 
@@ -117,7 +150,7 @@ export default function PrivacyPolicy() {
             >
               <h3 className="text-xl font-semibold text-secondary-900 mb-3">Contacting Us</h3>
               <p>
-                If there are any questions regarding this privacy policy, you may contact us using the information on our Contact page.
+                If you have any questions about this Privacy Policy, please contact us using the information on our Contact page or by email at [Your Contact Email Address].
               </p>
             </motion.div>
           </div>
