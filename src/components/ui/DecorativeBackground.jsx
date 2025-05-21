@@ -54,7 +54,7 @@ export function HeroBackground() {
         className="absolute inset-0 bg-gradient-to-br from-primary-600 to-primary-800"
         animate={{
           background: [
-            'linear-gradient(to bottom right, #2563eb, #1d4ed8)',
+            'linear-gradient(to bottom right,rgb(67, 182, 205), #1d4ed8)',
             'linear-gradient(to bottom right, #1d4ed8, #1e40af)',
             'linear-gradient(to bottom right, #2563eb, #1d4ed8)',
           ],

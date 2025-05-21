@@ -24,10 +24,10 @@ const features = [
 ];
 
 const stats = [
-  { id: 1, name: 'Years of Experience', value: '15+' },
-  { id: 2, name: 'Happy Clients', value: '500+' },
-  { id: 3, name: 'Services Offered', value: '20+' },
-  { id: 4, name: 'Success Rate', value: '98%' },
+  { id: 1, name: 'Years of Experience', value: '4+' },
+  { id: 2, name: 'Happy Clients', value: '200+' },
+  { id: 3, name: 'Services Offered', value: '6+' },
+  { id: 4, name: 'Success Rate', value: '100%' },
 ];
 
 export default function Home() {

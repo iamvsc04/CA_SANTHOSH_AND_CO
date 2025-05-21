@@ -91,7 +91,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="text-lg font-medium text-secondary-900">Email</h4>
-                      <p className="text-secondary-600">info@casantosh.com</p>
+                      <p className="text-secondary-600">casanthosh211@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 transition-colors">
@@ -100,7 +100,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="text-lg font-medium text-secondary-900">Phone</h4>
-                      <p className="text-secondary-600">+91 1234567890</p>
+                      <p className="text-secondary-600">+91 79894 88080</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 transition-colors">
@@ -109,7 +109,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="text-lg font-medium text-secondary-900">Address</h4>
-                      <p className="text-secondary-600">123 Main Street, Nalgonda, Telangana, India</p>
+                      <p className="text-secondary-600">1082/1, Ramagiri Rd, opposite RDO office, near Clock Tower Road, Savarkar Nagar, Nalgonda, Telangana 508001</p>
                     </div>
                   </div>
                 </div>
