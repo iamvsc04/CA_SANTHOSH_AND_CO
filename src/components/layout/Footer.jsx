@@ -20,7 +20,6 @@ const footerNavigation = {
     { name: 'About', href: '/about' },
     { name: 'Testimonials', href: '/testimonials' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Career', href: '/career' },
     { name: 'Contact', href: '/contact' },
   ],
   legal: [
