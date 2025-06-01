@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Solutions', href: '/solutions' },
-  { name: 'Testimonials', href: '/testimonials' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Solutions", href: "/solutions" },
+  { name: "Testimonials", href: "/testimonials" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -23,7 +23,13 @@ export default function Navbar() {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
-                <span className="text-2xl font-bold text-primary-600">CA Santhosh</span>
+                <img
+                  className="h-16 w-auto"
+                  src="src\assets\navlogo.png"
+                  alt="CA Santhosh Logo"
+                  loading="lazy"
+                />
+                {/* <span className="text-2xl font-bold text-primary-600">CA Santhosh</span> */}
               </Link>
             </div>
 
@@ -39,10 +45,7 @@ export default function Navbar() {
                     {item.name}
                   </Link>
                 ))}
-                <Link
-                  to="/book-appointment"
-                  className="btn btn-primary"
-                >
+                <Link to="/book-appointment" className="btn btn-primary">
                   Book Consultation
                 </Link>
               </div>
@@ -72,7 +75,7 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden"
           >
@@ -100,4 +103,4 @@ export default function Navbar() {
       </AnimatePresence>
     </header>
   );
-} 
+}

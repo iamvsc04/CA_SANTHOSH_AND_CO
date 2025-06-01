@@ -1,33 +1,49 @@
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRightIcon, ChartBarIcon, DocumentTextIcon, UserGroupIcon } from '@heroicons/react/24/outline';
-import { AnimatedSection, AnimatedElement, AnimatedHeading, AnimatedText, DecorativeBackground, Button, Card } from '../components/ui';
-import heroImage from '../assets/bg ca.jpg';
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import {
+  ArrowRightIcon,
+  ChartBarIcon,
+  DocumentTextIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
+import {
+  AnimatedSection,
+  AnimatedElement,
+  AnimatedHeading,
+  AnimatedText,
+  DecorativeBackground,
+  Button,
+  Card,
+} from "../components/ui";
+import heroImage from "../assets/bg ca.jpg";
 
 const features = [
   {
-    name: 'Tax Planning',
-    description: 'Strategic tax planning to optimize your financial position and maximize savings.',
+    name: "Tax Planning",
+    description:
+      "Strategic tax planning to optimize your financial position and maximize savings.",
     icon: ChartBarIcon,
   },
   {
-    name: 'Business Advisory',
-    description: 'Expert guidance for business growth, compliance, and financial management.',
+    name: "Business Advisory",
+    description:
+      "Expert guidance for business growth, compliance, and financial management.",
     icon: DocumentTextIcon,
   },
   {
-    name: 'Client Success',
-    description: 'Dedicated support and personalized solutions for all your financial needs.',
+    name: "Client Success",
+    description:
+      "Dedicated support and personalized solutions for all your financial needs.",
     icon: UserGroupIcon,
   },
 ];
 
 const stats = [
-  { id: 1, name: 'Years of Experience', value: '4+' },
-  { id: 2, name: 'Happy Clients', value: '200+' },
-  { id: 3, name: 'Services Offered', value: '6+' },
-  { id: 4, name: 'Success Rate', value: '100%' },
+  { id: 1, name: "Years of Experience", value: "4+" },
+  { id: 2, name: "Happy Clients", value: "2000+" },
+  { id: 3, name: "Services Offered", value: "6+" },
+  { id: 4, name: "Success Rate", value: "100%" },
 ];
 
 export default function Home() {
@@ -35,7 +51,10 @@ export default function Home() {
     <>
       <Helmet>
         <title>CA Veerlapati Santhosh | Chartered Accountant in Nalgonda</title>
-        <meta name="description" content="Professional accounting and tax services in Nalgonda. Expert solutions for individuals and businesses." />
+        <meta
+          name="description"
+          content="Professional accounting and tax services in Nalgonda. Expert solutions for individuals and businesses."
+        />
       </Helmet>
 
       {/* Hero Section */}
@@ -53,7 +72,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-black/50" />
         </motion.div>
-        
+
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <motion.div
@@ -66,7 +85,8 @@ export default function Home() {
                 Your Trusted Financial Partner
               </h1>
               <p className="text-xl text-primary-100 mb-8">
-                Expert accounting and tax services tailored to your needs. Let's build your financial success together.
+                Expert accounting and tax services tailored to your needs. Let's
+                build your financial success together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/book-appointment" className="btn btn-primary">
@@ -84,7 +104,9 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-lg"
             >
-              <h2 className="text-2xl font-semibold text-white mb-4">Why Choose CA Veerlapati Santhosh?</h2>
+              <h2 className="text-2xl font-semibold text-white mb-4">
+                Why Choose CA Veerlapati Santhosh?
+              </h2>
               <ul className="space-y-3 text-primary-100">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-primary-400 rounded-full mr-3"></span>
@@ -117,7 +139,9 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className="text-center"
               >
-                <div className="text-4xl font-bold text-primary-600 mb-2">{stat.value}</div>
+                <div className="text-4xl font-bold text-primary-600 mb-2">
+                  {stat.value}
+                </div>
                 <div className="text-secondary-600">{stat.name}</div>
               </motion.div>
             ))}
@@ -143,9 +167,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-secondary-900 mb-4">
                   {feature.name}
                 </h3>
-                <p className="text-secondary-600">
-                  {feature.description}
-                </p>
+                <p className="text-secondary-600">{feature.description}</p>
               </AnimatedElement>
             ))}
           </div>
@@ -160,7 +182,8 @@ export default function Home() {
               Ready to Get Started?
             </AnimatedHeading>
             <AnimatedText className="text-primary-100 mb-8">
-              Schedule a consultation today and take the first step towards financial success.
+              Schedule a consultation today and take the first step towards
+              financial success.
             </AnimatedText>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -181,4 +204,4 @@ export default function Home() {
       </section>
     </>
   );
-} 
+}

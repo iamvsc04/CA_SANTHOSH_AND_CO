@@ -1,54 +1,64 @@
-import { Helmet } from 'react-helmet-async';
-import { AnimatedSection, AnimatedHeading, AnimatedText, DecorativeBackground } from '../components/ui';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
+import {
+  AnimatedSection,
+  AnimatedHeading,
+  AnimatedText,
+  DecorativeBackground,
+} from "../components/ui";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const qualifications = [
   {
-    title: 'Chartered Accountant',
-    institution: 'Institute of Chartered Accountants of India (ICAI)',
-    year: '2020'
+    title: "Chartered Accountant",
+    institution: "Institute of Chartered Accountants of India (ICAI)",
+    year: "2020",
   },
   {
-    title: 'Bachelor of Commerce',
-    institution: 'Osmania University',
-    year: '2018'
-  }
+    title: "Bachelor of Commerce",
+    institution: "Osmania University",
+    year: "2018",
+  },
 ];
 
 const experience = [
   {
-    year: '2020 - Present',
-    title: 'Independent Practice',
-    description: 'Established successful CA practice in Nalgonda, serving diverse clientele across various sectors.'
+    year: "2020 - Present",
+    title: "Independent Practice",
+    description:
+      "Established successful CA practice in Nalgonda, serving diverse clientele across various sectors.",
   },
   {
-    year: '2018 - 2020',
-    title: 'Article Assistant',
-    description: 'Completed articleship under senior CA, gaining hands-on experience in audit, taxation, and compliance.'
-  }
+    year: "2018 - 2020",
+    title: "Article Assistant",
+    description:
+      "Completed articleship under senior CA, gaining hands-on experience in audit, taxation, and compliance.",
+  },
 ];
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 }
+  transition: { duration: 0.5 },
 };
 
 export default function About() {
   return (
     <>
       <Helmet>
-        <title>About CA VEERLAPATI Santhosh | Chartered Accountant Nalgonda</title>
-        <meta name="description" content="Learn more about CA VEERLAPATI Santhosh and his commitment to providing expert financial services in Nalgonda." />
+        <title>
+          About CA VEERLAPATI Santhosh | Chartered Accountant Nalgonda
+        </title>
+        <meta
+          name="description"
+          content="Learn more about CA VEERLAPATI Santhosh and his commitment to providing expert financial services in Nalgonda."
+        />
       </Helmet>
 
       <AnimatedSection className="relative py-20 bg-white overflow-hidden">
         <DecorativeBackground />
         <div className="container relative z-10 text-center">
-          <AnimatedHeading>
-            About CA VEERLAPATI Santhosh
-          </AnimatedHeading>
+          <AnimatedHeading>About CA VEERLAPATI Santhosh</AnimatedHeading>
           <AnimatedText className="mt-4 max-w-3xl mx-auto text-xl">
             Dedicated to providing expert financial guidance and solutions.
           </AnimatedText>
@@ -74,10 +84,19 @@ export default function About() {
               Our Story and Commitment
             </AnimatedHeading>
             <AnimatedText className="mb-4" delay={0.2}>
-              With 3-4 years of dedicated practice in Nalgonda, CA VEERLAPATI Santhosh has been a trusted partner for individuals and businesses seeking expert financial and tax solutions. His practice is built on a foundation of integrity, deep expertise, and a personalized approach to client service.
+              With 3-4 years of dedicated practice in Nalgonda, CA VEERLAPATI
+              Santhosh has been a trusted partner for individuals and businesses
+              seeking expert financial and tax solutions. His practice is built
+              on a foundation of integrity, deep expertise, and a personalized
+              approach to client service.
             </AnimatedText>
             <AnimatedText delay={0.3}>
-              We understand the unique financial landscape of Nalgonda and are committed to helping our clients navigate it successfully. Our focus is not just on providing services, but on building lasting relationships based on trust and mutual respect. We strive to empower our clients with the knowledge and strategies they need to achieve their financial goals.
+              We understand the unique financial landscape of Nalgonda and are
+              committed to helping our clients navigate it successfully. Our
+              focus is not just on providing services, but on building lasting
+              relationships based on trust and mutual respect. We strive to
+              empower our clients with the knowledge and strategies they need to
+              achieve their financial goals.
             </AnimatedText>
           </div>
         </div>
@@ -85,9 +104,7 @@ export default function About() {
 
       <AnimatedSection className="py-20 bg-white">
         <div className="container text-center">
-          <AnimatedHeading className="mb-12">
-            Our Core Values
-          </AnimatedHeading>
+          <AnimatedHeading className="mb-12">Our Core Values</AnimatedHeading>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Placeholder for values - replace with actual content */}
             <motion.div
@@ -97,8 +114,12 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="p-6 rounded-lg shadow-md bg-primary-50"
             >
-              <h3 className="text-xl font-semibold text-primary-800 mb-3">Integrity</h3>
-              <p className="text-gray-700">Upholding the highest ethical standards in all our interactions.</p>
+              <h3 className="text-xl font-semibold text-primary-800 mb-3">
+                Integrity
+              </h3>
+              <p className="text-gray-700">
+                Upholding the highest ethical standards in all our interactions.
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -107,8 +128,12 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="p-6 rounded-lg shadow-md bg-secondary-50"
             >
-              <h3 className="text-xl font-semibold text-secondary-800 mb-3">Expertise</h3>
-              <p className="text-gray-700">Continuously enhancing our knowledge to provide the best advice.</p>
+              <h3 className="text-xl font-semibold text-secondary-800 mb-3">
+                Expertise
+              </h3>
+              <p className="text-gray-700">
+                Continuously enhancing our knowledge to provide the best advice.
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -117,8 +142,13 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="p-6 rounded-lg shadow-md bg-primary-50"
             >
-              <h3 className="text-xl font-semibold text-primary-800 mb-3">Client Focus</h3>
-              <p className="text-gray-700">Prioritizing client needs and building strong, trusting relationships.</p>
+              <h3 className="text-xl font-semibold text-primary-800 mb-3">
+                Client Focus
+              </h3>
+              <p className="text-gray-700">
+                Prioritizing client needs and building strong, trusting
+                relationships.
+              </p>
             </motion.div>
           </div>
         </div>
@@ -204,9 +234,7 @@ export default function About() {
                   <h3 className="text-xl font-semibold text-secondary-900 mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-secondary-600">
-                    {item.description}
-                  </p>
+                  <p className="text-secondary-600">{item.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -223,9 +251,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold mb-6">
-              Ready to Work Together?
-            </h2>
+            <h2 className="text-3xl font-bold mb-6">Ready to Work Together?</h2>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
               Let's discuss how I can help you achieve your financial goals
             </p>
@@ -240,4 +266,4 @@ export default function About() {
       </section>
     </>
   );
-} 
+}
