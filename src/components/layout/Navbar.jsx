@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import navLogo from '../../assets/navlogo.png';
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -25,7 +26,7 @@ export default function Navbar() {
               <Link to="/" className="flex items-center">
                 <img
                   className="h-16 w-auto"
-                  src="/src/assets/navlogo.png"
+                  src={navLogo}
                   alt="CA Santhosh Logo"
                   loading="lazy"
                 />
