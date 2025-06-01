@@ -25,7 +25,7 @@ export default function Navbar() {
               <Link to="/" className="flex items-center">
                 <img
                   className="h-16 w-auto"
-                  src="src\assets\navlogo.png"
+                  src="/src/assets/navlogo.png"
                   alt="CA Santhosh Logo"
                   loading="lazy"
                 />
