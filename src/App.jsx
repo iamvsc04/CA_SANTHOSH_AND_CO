@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence } from 'framer-motion';
@@ -26,15 +27,28 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import Disclaimer from './pages/Disclaimer';
 import IncomeTaxFiling from './pages/IncomeTaxFiling';
-import GSTRegistration from './pages/GSTRegistration';
+import GSTRegistration from './pages/registrations/GSTRegistration';
 import CompanyFormation from './pages/CompanyFormation';
 import Bookkeeping from './pages/Bookkeeping';
 import TDSPayroll from './pages/TDSPayroll';
+import PartnershipFirmRegistration from './pages/registrations/PartnershipFirmRegistration';
+import ProprietorshipFirmRegistration from './pages/registrations/ProprietorshipFirmRegistration';
+import PrivateLimitedCompanyRegistration from './pages/registrations/PrivateLimitedCompanyRegistration';
 import SmallBusiness from './pages/SmallBusiness';
 import Startups from './pages/Startups';
 import SalariedIndividuals from './pages/SalariedIndividuals';
 import NRIs from './pages/NRIs';
 import NotFound from './pages/NotFound';
+import ServiceCategoryPage from './pages/ServiceCategoryPage';
+import SubServiceDetailPage from './pages/SubServiceDetailPage';
+import LLPRegistration from './pages/registrations/LLPRegistration';
+import MSMERegistration from './pages/registrations/MSMERegistration';
+import IECRegistration from './pages/registrations/IECRegistration';
+import LabourLicense from './pages/licenses/LabourLicense';
+import TradeLicense from './pages/licenses/TradeLicense';
+import FactoryLicense from './pages/licenses/FactoryLicense';
+import FactoryPlanApproval from './pages/licenses/FactoryPlanApproval';
+import PollutionBoardApproval from './pages/licenses/PollutionBoardApproval';
 
 function App() {
   return (
@@ -49,6 +63,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/services/:categoryName" element={<ServiceCategoryPage />} />
+                <Route path="/services/:categoryName/:subServiceName" element={<SubServiceDetailPage />} />
                 <Route path="/services/:serviceId" element={<ServiceDetail />} />
                 <Route path="/solutions" element={<Solutions />} />
                 <Route path="/testimonials" element={<Testimonials />} />
@@ -62,10 +78,22 @@ function App() {
                 <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
                 <Route path="/disclaimer" element={<Disclaimer />} />
                 <Route path="/services/income-tax-filing" element={<IncomeTaxFiling />} />
-                <Route path="/services/gst-registration" element={<GSTRegistration />} />
                 <Route path="/services/company-formation" element={<CompanyFormation />} />
                 <Route path="/services/bookkeeping" element={<Bookkeeping />} />
                 <Route path="/services/tds-payroll" element={<TDSPayroll />} />
+                <Route path="/services/registrations/partnership-firm" element={<PartnershipFirmRegistration />} />
+                <Route path="/services/registrations/gst-registration" element={<GSTRegistration />} />
+                <Route path="/services/registrations/proprietorship-firm" element={<ProprietorshipFirmRegistration />} />
+                <Route path="/services/registrations/company-incorporation" element={<PrivateLimitedCompanyRegistration />} />
+                <Route path="/services/registrations/llp-registration" element={<LLPRegistration />} />
+                <Route path="/services/gst-registration" element={<GSTRegistration />} />
+                <Route path="/services/registrations/msme-udyam" element={<MSMERegistration />} />
+                <Route path="/services/registrations/iec-code" element={<IECRegistration />} />
+                <Route path="/services/licenses/labour-license" element={<LabourLicense />} />
+                <Route path="/services/licenses/trade-license" element={<TradeLicense />} />
+                <Route path="/services/licenses/factory-license" element={<FactoryLicense />} />
+                <Route path="/services/licenses/factory-plan-approval" element={<FactoryPlanApproval />} />
+                <Route path="/services/licenses/pollution-board-approval" element={<PollutionBoardApproval />} />
                 <Route path="/solutions/small-business" element={<SmallBusiness />} />
                 <Route path="/solutions/startups" element={<Startups />} />
                 <Route path="/solutions/salaried" element={<SalariedIndividuals />} />

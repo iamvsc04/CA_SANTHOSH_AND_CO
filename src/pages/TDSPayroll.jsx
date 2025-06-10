@@ -54,7 +54,7 @@ export default function TDSPayroll() {
         <AnimatedSection className="relative min-h-[60vh] bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 overflow-hidden">
           <motion.div 
             style={{ opacity, scale }}
-            className="absolute inset-0 bg-[url('/src/assets/bg-ca.jpg')] bg-cover bg-center mix-blend-overlay opacity-40"
+            className="absolute inset-0 bg-[url('/src/assets/bg-ca.webp')] bg-cover bg-center mix-blend-overlay opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-primary-900/95" />
           <DecorativeBackground />

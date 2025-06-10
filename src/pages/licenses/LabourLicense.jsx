@@ -1,28 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import SEO from '../components/SEO';
+import SEO from '../../components/SEO';
 
-const GSTRegistration = () => {
+const LabourLicense = () => {
   return (
     <>
       <SEO
-        title="GST Registration - Simplified Goods & Services Tax Filing"
-        description="Simplify your GST registration process with our expert guidance. We help businesses register for Goods and Services Tax (GST) seamlessly, ensuring compliance and smooth operations."
-        keywords="GST registration, Goods and Services Tax, GST filing, GST compliance, tax registration, business tax, India GST"
-        canonicalUrl="https://yourdomain.com/services/gst-registration"
-        ogImage="https://picsum.photos/seed/gst-registration/1024/576"
-          />
+        title="Labour License - Workforce Compliance & Regulation"
+        description="Ensure compliance with labor laws and regulations by obtaining your Labour License with our expert assistance. We guide businesses through the necessary steps for workforce regulation."
+        keywords="labour license, labor law compliance, workforce regulation, employment law, industrial relations, labor permit"
+        canonicalUrl="https://yourdomain.com/services/licenses/labour-license"
+        ogImage="https://picsum.photos/seed/labour-license/1024/576"
+      />
       <div className="py-16 bg-[#F2F3EB]">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-[#474544] tracking-wider uppercase mb-4">
-                GST Registration
+              Labour License
             </h1>
             <div className="h-0.5 bg-gradient-to-r from-transparent via-[#474544] to-transparent mx-auto mb-8 w-20" />
             <p className="text-[#474544]/80 text-lg max-w-3xl mx-auto leading-relaxed">
-              Get your Goods and Services Tax (GST) registration done seamlessly and efficiently. We provide comprehensive assistance to ensure your business complies with all GST regulations.
+              Obtain your Labour License to ensure compliance with labor laws and regulations. We guide you through the registration process based on your business type.
             </p>
           </div>
 
@@ -35,13 +35,14 @@ const GSTRegistration = () => {
               </h2>
               <div className="space-y-4">
                 {[
-                  "Proprietor PAN Card",
-                  "Proprietor Aadhar Card",
-                  "Proprietor Mobile & Mail ID",
-                  "Proprietor Bank Details or Firm Bank Details (A/c. Number & IFSC Code)",
-                  "Business Address (Mention Full Address)",
-                  "Nature of Business & Business Activity",
-                  "Expected Monthly Turnover"
+                  "Passport Size Photo",
+                  "PAN Card",
+                  "Aadhar Card",
+                  "Recent Electricity Bill",
+                  "Mobile & Mail ID",
+                  "Rental Agreement if Rented",
+                  "NOC if Premises on Relatives Name",
+                  "Telugu Name Board Photos of Business Premises"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3 p-4 rounded-lg hover:bg-[#474544]/5 transition-all duration-300">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#474544] flex items-center justify-center">
@@ -49,7 +50,7 @@ const GSTRegistration = () => {
                     </div>
                     <p className="text-[#474544]">{item}</p>
                   </div>
-              ))}
+                ))}
               </div>
             </div>
 
@@ -61,13 +62,14 @@ const GSTRegistration = () => {
               <div className="space-y-4">
                 {[
                   "Partnership Deed",
+                  "All Partners Passport Size Photo",
                   "All Partners PAN Cards",
-                  "All Partners Aadhar Cards",
+                  "All Partners Aadhar Cards or Voter ID or Passport or Driving License",
                   "All Partners Mobile & Mail IDs",
-                  "All Partners Bank Details or Firm Bank Details (A/c. Number & IFSC Code)",
-                  "Business Address (Mention Full Address)",
-                  "Nature of Business & Business Activity",
-                  "Expected Monthly Turnover"
+                  "Recent Electricity Bill",
+                  "Rental Agreement if Rented",
+                  "NOC if Premises on Relatives Name",
+                  "Telugu Name Board Photos of Business Premises"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3 p-4 rounded-lg hover:bg-[#474544]/5 transition-all duration-300">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#474544] flex items-center justify-center">
@@ -75,8 +77,8 @@ const GSTRegistration = () => {
                     </div>
                     <p className="text-[#474544]">{item}</p>
                   </div>
-                  ))}
-                </div>
+                ))}
+              </div>
             </div>
 
             {/* Companies Section */}
@@ -88,13 +90,14 @@ const GSTRegistration = () => {
                 {[
                   "Incorporation Certificate",
                   "MOA and AOA",
+                  "All Directors Passport Size Photos",
                   "All Directors PAN Cards",
-                  "All Directors Aadhar Cards",
+                  "All Directors Aadhar Cards or Voter ID or Passport or Driving License",
                   "All Directors Mobile & Mail IDs",
-                  "All Directors Bank Details or Firm Bank Details (A/c. Number & IFSC Code)",
-                  "Business Address (Mention Full Address)",
-                  "Nature of Business & Business Activity",
-                  "Expected Monthly Turnover"
+                  "Recent Electricity Bill",
+                  "Rental Agreement if Rented",
+                  "NOC if Premises on Relatives Name",
+                  "Telugu Name Board Photos of Business Premises"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3 p-4 rounded-lg hover:bg-[#474544]/5 transition-all duration-300">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#474544] flex items-center justify-center">
@@ -102,8 +105,8 @@ const GSTRegistration = () => {
                     </div>
                     <p className="text-[#474544]">{item}</p>
                   </div>
-                  ))}
-                </div>
+                ))}
+              </div>
             </div>
 
             {/* Note Section */}
@@ -121,14 +124,14 @@ const GSTRegistration = () => {
                 Have Questions?
               </h3>
               <p className="text-[#474544]/80 mb-6">
-                Our team is here to help you with any queries about the GST registration process.
-                </p>
+                Our team is here to help you with any queries about the Labour License registration process.
+              </p>
               <Link 
-                to="/contact" 
+                to="/services/licenses/labour-license" 
                 className="inline-block px-8 py-3 bg-[#474544] text-white rounded-lg hover:bg-[#474544]/90 transition-colors duration-300 uppercase tracking-wider text-sm font-semibold"
               >
                 Contact Us
-                </Link>
+              </Link>
             </div>
           </div>
         </div>
@@ -137,4 +140,4 @@ const GSTRegistration = () => {
   );
 };
 
-export default GSTRegistration;
+export default LabourLicense; 

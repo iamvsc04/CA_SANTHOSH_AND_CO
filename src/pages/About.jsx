@@ -1,269 +1,134 @@
-import { Helmet } from "react-helmet-async";
-import {
-  AnimatedSection,
-  AnimatedHeading,
-  AnimatedText,
-  DecorativeBackground,
-} from "../components/ui";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
-const qualifications = [
-  {
-    title: "Chartered Accountant",
-    institution: "Institute of Chartered Accountants of India (ICAI)",
-    year: "2020",
-  },
-  {
-    title: "Bachelor of Commerce",
-    institution: "Osmania University",
-    year: "2018",
-  },
-];
+const About = () => {
+  const founder = {
+    name: "Veerlapati Santhosh",
+    title: "Founder & Chartered Accountant",
+    image: "https://picsum.photos/seed/santhosh-profile/400/400",
+    bio: "Veerlapati Santhosh is a highly experienced Chartered Accountant and the visionary founder of V Santhosh & Associates. With a profound understanding of taxation, auditing, and corporate finance, he leads the firm with a commitment to integrity and client success. His expertise spans across various industries, providing strategic financial advice that helps businesses thrive and individuals achieve their financial goals. Santhosh is known for his meticulous approach, proactive problem-solving, and dedication to staying abreast of the latest regulatory changes, ensuring clients always receive the most accurate and beneficial guidance.",
+  };
 
-const experience = [
-  {
-    year: "2020 - Present",
-    title: "Independent Practice",
-    description:
-      "Established successful CA practice in Nalgonda, serving diverse clientele across various sectors.",
-  },
-  {
-    year: "2018 - 2020",
-    title: "Article Assistant",
-    description:
-      "Completed articleship under senior CA, gaining hands-on experience in audit, taxation, and compliance.",
-  },
-];
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 },
-};
-
-export default function About() {
   return (
     <>
-      <Helmet>
-        <title>
-          About CA VEERLAPATI Santhosh | Chartered Accountant Nalgonda
-        </title>
-        <meta
-          name="description"
-          content="Learn more about CA VEERLAPATI Santhosh and his commitment to providing expert financial services in Nalgonda."
-        />
-      </Helmet>
-
-      <AnimatedSection className="relative py-20 bg-white overflow-hidden">
-        <DecorativeBackground />
-        <div className="container relative z-10 text-center">
-          <AnimatedHeading>About CA VEERLAPATI Santhosh</AnimatedHeading>
-          <AnimatedText className="mt-4 max-w-3xl mx-auto text-xl">
-            Dedicated to providing expert financial guidance and solutions.
-          </AnimatedText>
-        </div>
-      </AnimatedSection>
-
-      <AnimatedSection className="py-20 bg-gray-50">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <img
-              src="https://images.unsplash.com/photo-150767979993b-ed712d830cc5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with actual image
-              alt="Professional accountant working at desk"
-              className="rounded-xl shadow-lg w-full h-auto object-cover"
-            />
-          </motion.div>
-          <div>
-            <AnimatedHeading className="mb-6 text-left" delay={0.1}>
-              Our Story and Commitment
-            </AnimatedHeading>
-            <AnimatedText className="mb-4" delay={0.2}>
-              With 3-4 years of dedicated practice in Nalgonda, CA VEERLAPATI
-              Santhosh has been a trusted partner for individuals and businesses
-              seeking expert financial and tax solutions. His practice is built
-              on a foundation of integrity, deep expertise, and a personalized
-              approach to client service.
-            </AnimatedText>
-            <AnimatedText delay={0.3}>
-              We understand the unique financial landscape of Nalgonda and are
-              committed to helping our clients navigate it successfully. Our
-              focus is not just on providing services, but on building lasting
-              relationships based on trust and mutual respect. We strive to
-              empower our clients with the knowledge and strategies they need to
-              achieve their financial goals.
-            </AnimatedText>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      <AnimatedSection className="py-20 bg-white">
-        <div className="container text-center">
-          <AnimatedHeading className="mb-12">Our Core Values</AnimatedHeading>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Placeholder for values - replace with actual content */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="p-6 rounded-lg shadow-md bg-primary-50"
-            >
-              <h3 className="text-xl font-semibold text-primary-800 mb-3">
-                Integrity
-              </h3>
-              <p className="text-gray-700">
-                Upholding the highest ethical standards in all our interactions.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="p-6 rounded-lg shadow-md bg-secondary-50"
-            >
-              <h3 className="text-xl font-semibold text-secondary-800 mb-3">
-                Expertise
-              </h3>
-              <p className="text-gray-700">
-                Continuously enhancing our knowledge to provide the best advice.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="p-6 rounded-lg shadow-md bg-primary-50"
-            >
-              <h3 className="text-xl font-semibold text-primary-800 mb-3">
-                Client Focus
-              </h3>
-              <p className="text-gray-700">
-                Prioritizing client needs and building strong, trusting
-                relationships.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Qualifications Section */}
-      <section className="py-20 bg-secondary-50">
+      <SEO
+        title="About Us - V Santhosh & Associates, Chartered Accountants"
+        description="Learn about V Santhosh & Associates, a leading CA firm in Nalgonda providing expert financial solutions, tax, audit, and compliance services. Discover our mission, values, and experienced founder."
+        keywords="about CA firm, V Santhosh & Associates, Chartered Accountant Nalgonda, financial experts, tax consultants, audit firm, business advisory"
+        canonicalUrl="https://VSanthoshandAssociates.in/about"
+        ogImage="https://picsum.photos/seed/about-us-page/1024/576"
+      />
+      <div className="py-16 bg-[#F2F3EB]">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold text-secondary-900 mb-4">
-              Qualifications
-            </h2>
-            <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
-              Professional certifications and academic achievements
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {qualifications.map((qualification, index) => (
-              <motion.div
-                key={qualification.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg p-6"
-              >
-                <h3 className="text-xl font-semibold text-secondary-900 mb-2">
-                  {qualification.title}
-                </h3>
-                <p className="text-secondary-600 mb-2">
-                  {qualification.institution}
-                </p>
-                <p className="text-primary-600 font-medium">
-                  {qualification.year}
-                </p>
-              </motion.div>
-            ))}
+          {/* Hero Section */}
+          <div className="text-center mb-16">
+            <motion.h1
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-4xl md:text-5xl font-bold text-[#474544] tracking-wider uppercase mb-4"
+            >
+              About V Santhosh & Associates
+            </motion.h1>
+            <div className="h-0.5 bg-gradient-to-r from-transparent via-[#474544] to-transparent mx-auto mb-8 w-20" />
+            <motion.p
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-[#474544]/80 text-lg max-w-3xl mx-auto leading-relaxed"
+            >
+              Established with a vision to provide exceptional financial and advisory services, V Santhosh & Associates is a leading Chartered Accountant firm dedicated to serving individuals and businesses. Our founder brings extensive experience in various domains, including taxation, auditing, and regulatory compliance.
+            </motion.p>
           </div>
-        </div>
-      </section>
 
-      {/* Experience Timeline */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold text-secondary-900 mb-4">
-              Professional Experience
-            </h2>
-            <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
-              Years of dedicated service in the field of accountancy
-            </p>
-          </motion.div>
-
-          <div className="max-w-3xl mx-auto">
-            {experience.map((item, index) => (
-              <motion.div
-                key={item.year}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative pl-8 pb-12 last:pb-0"
-              >
-                <div className="absolute left-0 top-0 w-4 h-4 rounded-full bg-primary-600" />
-                <div className="absolute left-2 top-4 bottom-0 w-0.5 bg-secondary-200 last:hidden" />
-                <div className="bg-white rounded-lg shadow-lg p-6">
-                  <p className="text-primary-600 font-semibold mb-2">
-                    {item.year}
+          {/* Mission and Values Section */}
+          <section className="py-16 md:py-24 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-[#474544]/10 mb-12">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-8 leading-tight">
+                Our Mission & Values
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                >
+                  <h3 className="text-2xl font-semibold text-[#474544] mb-4">Our Mission</h3>
+                  <p className="text-[#474544]/80 text-lg leading-relaxed">
+                    To empower our clients with comprehensive financial expertise and strategic advice, enabling them to achieve sustainable growth and financial well-being. We are committed to delivering excellence, fostering trust, and building lasting relationships through personalized service.
                   </p>
-                  <h3 className="text-xl font-semibold text-secondary-900 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-secondary-600">{item.description}</p>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                >
+                  <h3 className="text-2xl font-semibold text-[#474544] mb-4">Our Values</h3>
+                  <ul className="space-y-3 text-[#474544]/80 text-lg leading-relaxed list-disc list-inside">
+                    <li><span className="font-semibold">Integrity:</span> Upholding the highest ethical standards in all our dealings.</li>
+                    <li><span className="font-semibold">Excellence:</span> Striving for superior quality and continuous improvement in our services.</li>
+                    <li><span className="font-semibold">Client-Centricity:</span> Prioritizing client needs and delivering tailored solutions.</li>
+                    <li><span className="font-semibold">Innovation:</span> Embracing new technologies and approaches to provide efficient solutions.</li>
+                    <li><span className="font-semibold">Accountability:</span> Taking responsibility for our actions and commitments.</li>
+                  </ul>
+                </motion.div>
+              </div>
+            </div>
+          </section>
+
+          {/* Founder Section */}
+          <section className="py-16 md:py-24">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-8 leading-tight">
+                Our Founder
+              </h2>
+              <div className="max-w-4xl mx-auto">
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#474544]/10 flex flex-col md:flex-row items-center gap-8"
+                >
+                  <div className="flex-shrink-0">
+                    <img
+                      src={founder.image}
+                      alt={founder.name}
+                      className="w-48 h-48 rounded-full object-cover border-4 border-[#D3AF37]"
+                    />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="text-2xl font-bold text-[#474544] mb-2">{founder.name}</h3>
+                    <p className="text-lg text-[#474544]/70 mb-4">{founder.title}</p>
+                    <p className="text-[#474544]/80 text-lg leading-relaxed">{founder.bio}</p>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <div className="max-w-4xl mx-auto mt-12 text-center">
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#474544]/10">
+              <h3 className="text-2xl font-semibold text-[#474544] mb-4">
+                Ready to Partner with Us?
+              </h3>
+              <p className="text-[#474544]/80 mb-6">
+                Contact us today to discuss your financial needs and how we can help you achieve your goals.
+              </p>
+              <Link
+                to="/book-appointment"
+                className="inline-block px-8 py-3 bg-[#474544] text-white rounded-lg hover:bg-[#474544]/90 transition-colors duration-300 uppercase tracking-wider text-sm font-semibold"
+              >
+                Book a Consultation
+              </Link>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-primary-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl font-bold mb-6">Ready to Work Together?</h2>
-            <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss how I can help you achieve your financial goals
-            </p>
-            <Link
-              to="/book-appointment"
-              className="btn bg-white text-primary-600 hover:bg-primary-50"
-            >
-              Book a Consultation
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+      </div>
     </>
   );
-}
+};
+
+export default About;

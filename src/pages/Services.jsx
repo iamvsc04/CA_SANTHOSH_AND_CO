@@ -1,91 +1,221 @@
-import { Helmet } from 'react-helmet-async';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { AnimatedSection, AnimatedHeading, AnimatedText, Card, DecorativeBackground, Button } from '../components/ui';
-import { BriefcaseIcon, ScaleIcon, BanknotesIcon, DocumentCheckIcon } from '@heroicons/react/24/outline';
+import ServiceCard from '../components/services/ServiceCard';
+import SEO from '../components/SEO';
 
-const services = [
-  {
-    name: 'Taxation Services',
-    description: 'Comprehensive tax planning and filing for individuals and businesses.',
-    icon: ScaleIcon,
-    link: '/services/taxation'
-  },
-  {
-    name: 'Audit & Assurance',
-    description: 'Independent audit and assurance services to ensure financial accuracy and compliance.',
-    icon: DocumentCheckIcon,
-    link: '/services/audit'
-  },
-  {
-    name: 'Business Advisory',
-    description: 'Strategic advice and support for business setup, growth, and financial management.',
-    icon: BriefcaseIcon,
-    link: '/services/advisory'
-  },
-  {
-    name: 'Accounting & Bookkeeping',
-    description: 'Professional accounting and bookkeeping services to maintain accurate financial records.',
-    icon: BanknotesIcon,
-    link: '/services/accounting'
-  },
-];
+// Import service category images
+import registrationsImage from '../assets/images/services/registrations.webp';
+import gstRegistrationImage from '../assets/images/services/registrations/gst registration.webp';
+import companyRegistrationImage from '../assets/images/services/registrations/company-registration.webp';
+import partnershipRegistrationImage from '../assets/images/services/registrations/Partnership-Firm-Registration.webp';
+import proprietorshipRegistrationImage from '../assets/images/services/registrations/proprietorship-firm-registration.webp';
+import llpRegistrationImage from '../assets/images/services/registrations/llp registration.webp';
+import msmeImage from '../assets/images/services/registrations/MSME.webp';
+import iecImage from '../assets/images/services/registrations/IEC Registration.webp';
 
-export default function Services() {
+import factoryLicenseImage from '../assets/images/services/licenses/factory license.webp';
+import tradeLicenseImage from '../assets/images/services/licenses/trade license.webp';
+import labourLicenseImage from '../assets/images/services/licenses/labour license.webp';
+import pollutionBoardImage from '../assets/images/services/licenses/pollution board approval.webp';
+import factoryPlanImage from '../assets/images/services/licenses/factory plan approval.webp';
+
+const Services = () => {
+  const serviceCategories = [
+    {
+      title: 'Registrations',
+      description: 'Explore Registrations and more detailed services.',
+      link: '/services/registrations',
+      category: 'Registrations',
+      image: registrationsImage,
+      subServices: [
+        {
+          title: 'GST Registration',
+          description: 'Simplify your GST registration process with our expert guidance.',
+          link: '/services/gst-registration',
+          image: gstRegistrationImage,
+        },
+        {
+          title: 'Company Registration',
+          description: 'Start your business journey with proper company registration.',
+          link: '/services/company-registration',
+          image: companyRegistrationImage,
+        },
+        {
+          title: 'Partnership Firm Registration',
+          description: 'Register your partnership firm with ease and confidence.',
+          link: '/services/partnership-registration',
+          image: partnershipRegistrationImage,
+        },
+        {
+          title: 'Proprietorship Registration',
+          description: 'Establish your sole proprietorship business legally.',
+          link: '/services/proprietorship-registration',
+          image: proprietorshipRegistrationImage,
+        },
+        {
+          title: 'LLP Registration',
+          description: 'Register your Limited Liability Partnership with expert guidance.',
+          link: '/services/llp-registration',
+          image: llpRegistrationImage,
+        },
+        {
+          title: 'MSME/Udyam Registration',
+          description: 'Register your business under MSME/Udyam for government benefits.',
+          link: '/services/msme-registration',
+          image: msmeImage,
+        },
+        {
+          title: 'IEC Code Registration',
+          description: 'Obtain your Import Export Code for international trade.',
+          link: '/services/iec-registration',
+          image: iecImage,
+        },
+      ],
+    },
+    {
+      title: 'Licenses',
+      description: 'Explore Licenses and more detailed services.',
+      link: '/services/licenses',
+      category: 'Licenses',
+      image: factoryLicenseImage,
+      subServices: [
+        {
+          title: 'Factory License',
+          description: 'Obtain your Factory License for manufacturing operations.',
+          link: '/services/factory-license',
+          image: factoryLicenseImage,
+        },
+        {
+          title: 'Trade License',
+          description: 'Get your Trade License for legal business operations.',
+          link: '/services/trade-license',
+          image: tradeLicenseImage,
+        },
+        {
+          title: 'Labour License',
+          description: 'Ensure compliance with labor laws through proper licensing.',
+          link: '/services/labour-license',
+          image: labourLicenseImage,
+        },
+        {
+          title: 'Pollution Board Approval',
+          description: 'Obtain necessary environmental clearances for your business.',
+          link: '/services/pollution-board-approval',
+          image: pollutionBoardImage,
+        },
+        {
+          title: 'Factory Plan Approval',
+          description: 'Get your factory plans approved by relevant authorities.',
+          link: '/services/factory-plan-approval',
+          image: factoryPlanImage,
+        },
+      ],
+    },
+    {
+      title: 'Audit Services',
+      description: 'Explore Audit Services and more detailed services.',
+      link: '/services/audits',
+      category: 'Audit Services',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Returns Filing',
+      description: 'Explore Returns Filing and more detailed services.',
+      link: '/services/returns-filing',
+      category: 'Returns Filing',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Compliances',
+      description: 'Explore Compliances and more detailed services.',
+      link: '/services/compliances',
+      category: 'Compliances',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Certifications',
+      description: 'Explore Certifications and more detailed services.',
+      link: '/services/certifications',
+      category: 'Certifications',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Bank Related Services',
+      description: 'Explore Bank Related Services and more detailed services.',
+      link: '/services/bank-related-services',
+      category: 'Bank Related Services',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Digital Signature Service',
+      description: 'Explore Digital Signature Service and more detailed services.',
+      link: '/services/digital-signature-service',
+      category: 'Digital Signature Service',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Application Services',
+      description: 'Explore Application Services and more detailed services.',
+      link: '/services/application-services',
+      category: 'Application Services',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Subsidy Services',
+      description: 'Explore Subsidy Services and more detailed services.',
+      link: '/services/subsidy-services',
+      category: 'Subsidy Services',
+      image: registrationsImage, // Placeholder image
+    },
+    {
+      title: 'Other Services',
+      description: 'Explore Other Services and more detailed services.',
+      link: '/services/other-services',
+      category: 'Other Services',
+      image: registrationsImage, // Placeholder image
+    },
+  ];
+
   return (
     <>
-      <Helmet>
-        <title>Services | CA VEERLAPATI Santhosh - Chartered Accountant Nalgonda</title>
-        <meta name="description" content="Explore the range of professional accounting, taxation, audit, and business advisory services offered by CA VEERLAPATI Santhosh in Nalgonda." />
-      </Helmet>
+      <SEO
+        title="Our Comprehensive Services - Expert Financial Solutions"
+        description="Discover a wide range of financial, tax, and legal services offered by CA Services. From registrations and licenses to audits and tax planning, we provide expert solutions tailored to your business needs."
+        keywords="financial services, tax services, legal services, business registration, company audit, tax filing, financial advisory, CA services"
+        canonicalUrl="https://yourdomain.com/services"
+        ogImage="https://picsum.photos/seed/services-overview/1024/576"
+      />
+      <div className="py-16 bg-[#F2F3EB]">
+        <div className="container mx-auto px-4">
+          {/* Hero Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#474544] tracking-wider uppercase mb-4">
+              Our Comprehensive Services
+            </h1>
+            <div className="h-0.5 bg-gradient-to-r from-transparent via-[#474544] to-transparent mx-auto mb-8 w-20" />
+            <p className="text-[#474544]/80 text-lg max-w-3xl mx-auto leading-relaxed">
+              Expert financial solutions tailored to your specific needs.
+            </p>
+          </div>
 
-      <AnimatedSection className="relative py-20 bg-white overflow-hidden">
-        <DecorativeBackground />
-        <div className="container relative z-10 text-center">
-          <AnimatedHeading>
-            Our Comprehensive Services
-          </AnimatedHeading>
-          <AnimatedText className="mt-4 max-w-3xl mx-auto text-xl">
-            Expert financial solutions tailored to your specific needs.
-          </AnimatedText>
-        </div>
-      </AnimatedSection>
-
-      <AnimatedSection className="py-20 bg-gray-50">
-        <div className="container">
+          {/* Service Categories */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Link to={service.link} key={service.name}>
-                <Card className="h-full p-6 text-center" hover={true}>
-                  <div className="flex justify-center mb-6">
-                    <service.icon className="w-12 h-12 text-primary-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-secondary-900 mb-3">
-                    {service.name}
-                  </h3>
-                  <p className="text-secondary-600">
-                    {service.description}
-                  </p>
-                </Card>
-              </Link>
+            {serviceCategories.map((category, index) => (
+              <ServiceCard
+                key={index}
+                title={category.title}
+                description={category.description}
+                link={category.link}
+                category={category.category}
+                image={category.image}
+              />
             ))}
           </div>
         </div>
-      </AnimatedSection>
-
-      {/* CTA Section */}
-      <AnimatedSection className="py-20 bg-primary-600 text-white relative overflow-hidden">
-        <div className="container relative z-10 text-center">
-          <AnimatedHeading className="text-white mb-6">
-            Need a Specific Service?
-          </AnimatedHeading>
-          <AnimatedText className="text-primary-100 mb-8">
-            Contact us today to discuss your unique requirements and how we can assist you.
-          </AnimatedText>
-          <Button variant="secondary" size="lg" as={Link} to="/contact">
-            Get in Touch
-          </Button>
-        </div>
-      </AnimatedSection>
+      </div>
     </>
   );
-} 
+};
+
+export default Services; 

@@ -1,6 +1,8 @@
-import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import ServiceCard from '../components/services/ServiceCard';
+import SEO from '../components/SEO';
 import {
   ArrowRightIcon,
   ChartBarIcon,
@@ -16,7 +18,14 @@ import {
   Button,
   Card,
 } from "../components/ui";
-import heroImage from "../assets/bg ca.jpg";
+import heroImage from "../assets/bg.webp";  
+// Import service images
+import gstRegistrationImage from "../assets/images/services/gst-registration.webp";
+import msmeImage from "../assets/images/services/MSME.webp";
+import iecImage from "../assets/images/services/IEC Registration.webp";
+import labourLicenseImage from "../assets/images/services/labour license.webp";
+import tradeLicenseImage from "../assets/images/services/trade license.webp";
+import factoryLicenseImage from "../assets/images/services/factory license.webp";
 
 const features = [
   {
@@ -46,162 +55,260 @@ const stats = [
   { id: 4, name: "Success Rate", value: "100%" },
 ];
 
-export default function Home() {
+const Home = () => {
+  const servicesData = [
+    {
+      title: "GST Registration",
+      description: "Simplify your GST registration process with our expert guidance. We help businesses register for Goods and Services Tax (GST) seamlessly, ensuring compliance and smooth operations.",
+      link: "/services/gst-registration",
+      category: "Registrations",
+      image: gstRegistrationImage,
+    },
+    {
+      title: "MSME/Udyam Registrations",
+      description: "Register your business under MSME/Udyam to avail various government benefits and support schemes. We simplify the registration process for micro, small, and medium enterprises.",
+      link: "/services/registrations/msme-udyam",
+      category: "Registrations",
+      image: msmeImage,
+    },
+    {
+      title: "IEC Code Registration",
+      description: "Obtain your Import Export Code (IEC) registration with our expert assistance. We streamline the process for businesses looking to engage in international trade, ensuring full compliance.",
+      link: "/services/registrations/iec-code",
+      category: "Registrations",
+      image: iecImage,
+    },
+    {
+      title: "Labour License",
+      description: "Ensure compliance with labor laws and regulations by obtaining your Labour License with our expert assistance. We guide businesses through the necessary steps for workforce regulation.",
+      link: "/services/licenses/labour-license",
+      category: "Licenses",
+      image: labourLicenseImage,
+    },
+    {
+      title: "Trade License",
+      description: "Obtain your Trade License swiftly with our professional assistance. We guide you through the process to ensure your business operates legally and complies with all local regulations.",
+      link: "/services/licenses/trade-license",
+      category: "Licenses",
+      image: tradeLicenseImage,
+    },
+    {
+      title: "Factory License",
+      description: "Obtain your Factory License to legally operate your manufacturing unit. We guide you through the complete process, ensuring compliance with all regulatory requirements.",
+      link: "/services/licenses/factory-license",
+      category: "Licenses",
+      image: factoryLicenseImage,
+    },
+  ];
+
+  const testimonials = [
+    {
+      quote: "Their expertise in GST registration was invaluable. Quick, efficient, and hassle-free service!",
+      author: "Rajesh Kumar",
+      designation: "Director, RK Enterprises",
+    },
+    {
+      quote: "We highly recommend their services for MSME registration. The team was supportive and made the process very easy for us.",
+      author: "Priya Sharma",
+      designation: "Founder, Priya Textiles",
+    },
+    {
+      quote: "Obtaining our IEC code seemed daunting, but their guidance made it straightforward. Excellent service!",
+      author: "Amit Singh",
+      designation: "CEO, Global Exports",
+    },
+  ];
+
+  const faqs = [
+    {
+      question: "What is GST registration and why is it important?",
+      answer: "GST (Goods and Services Tax) registration is mandatory for businesses exceeding a certain turnover. It's crucial for legal operation, input tax credit claims, and maintaining compliance.",
+    },
+    {
+      question: "How long does MSME/Udyam registration take?",
+      answer: "MSME/Udyam registration is a quick and online process. With proper documentation, it can be completed within a few days, providing access to various government schemes.",
+    },
+    {
+      question: "Do I need an IEC code for international trade?",
+      answer: "Yes, an Import Export Code (IEC) is mandatory for businesses engaged in import or export activities in India. It's a key requirement for customs clearance and international transactions.",
+    },
+  ];
+
   return (
     <>
-      <Helmet>
-        <title>CA Veerlapati Santhosh | Chartered Accountant in Nalgonda</title>
-        <meta
-          name="description"
-          content="Professional accounting and tax services in Nalgonda. Expert solutions for individuals and businesses."
-        />
-      </Helmet>
-
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0"
-        >
-          <img
-            src={heroImage}
-            alt="CA Office Background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </motion.div>
-
-        <div className="container relative z-10">
-          <div className="max-w-3xl">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
+      <SEO
+        title="Home - V Santhosh & Associates"
+        description="V Santhosh & Associates offers comprehensive financial solutions, including tax, audit, and compliance services. Your trusted partner for business growth and financial stability."
+        keywords="CA firm, financial services, tax consulting, audit services, business registration, GST, income tax, financial advisory"
+        canonicalUrl="https://VSanthoshAndAssociates.in/"
+        ogImage="https://picsum.photos/seed/home-page/1024/576"
+      />
+      <div className="bg-[#F2F3EB]">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-r from-[#474544] to-[#333130] text-white py-20 md:py-32 overflow-hidden h-[80vh]">
+          <div className="absolute inset-0 z-0 opacity-30 h-[80vh]">
+            <img src="https://picsum.photos/seed/hero-background/1920/1080" alt="Background" className="w-full h-full object-cover" />
+          </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <motion.h1
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-4xl md:text-6xl font-bold leading-tight mb-4 tracking-wider"
+            >
+              Your Trusted Partner for Financial Excellence
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-6"
+              className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90"
             >
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Your Trusted Financial Partner
-              </h1>
-              <p className="text-xl text-primary-100 mb-8">
-                Expert accounting and tax services tailored to your needs. Let's
-                build your financial success together.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/book-appointment" className="btn btn-primary">
-                  Book a Consultation
-                </Link>
-                <Link to="/services" className="btn btn-secondary">
-                  Explore Services
-                </Link>
-              </div>
-            </motion.div>
-
+              V Santhosh & Associates: Charting Your Path to Financial Success with Expert Tax, Audit, and Compliance Services.
+            </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-lg"
-            >
-              <h2 className="text-2xl font-semibold text-white mb-4">
-                Why Choose CA Veerlapati Santhosh?
-              </h2>
-              <ul className="space-y-3 text-primary-100">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-primary-400 rounded-full mr-3"></span>
-                  Expert guidance in tax planning and compliance
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-primary-400 rounded-full mr-3"></span>
-                  Comprehensive business advisory services
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-primary-400 rounded-full mr-3"></span>
-                  Personalized solutions for your financial needs
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <motion.div
-                key={stat.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="text-center"
-              >
-                <div className="text-4xl font-bold text-primary-600 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-secondary-600">{stat.name}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 bg-secondary-50 relative">
-        <DecorativeBackground />
-        <div className="container relative z-10">
-          <AnimatedHeading className="text-center mb-12">
-            Why Choose Us?
-          </AnimatedHeading>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <AnimatedElement
-                key={feature.name}
-                delay={index * 0.2}
-                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
-              >
-                <feature.icon className="w-12 h-12 text-primary-600 mb-6" />
-                <h3 className="text-xl font-semibold text-secondary-900 mb-4">
-                  {feature.name}
-                </h3>
-                <p className="text-secondary-600">{feature.description}</p>
-              </AnimatedElement>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-primary-600 text-white relative overflow-hidden">
-        <div className="container relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <AnimatedHeading className="text-white mb-6">
-              Ready to Get Started?
-            </AnimatedHeading>
-            <AnimatedText className="text-primary-100 mb-8">
-              Schedule a consultation today and take the first step towards
-              financial success.
-            </AnimatedText>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
             >
               <Link
-                to="/book-appointment"
-                className="inline-flex items-center btn bg-white text-primary-600 hover:bg-primary-50"
+                to="/contact"
+                className="inline-block bg-[#D3AF37] text-[#474544] hover:bg-[#C29D2A] px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300 shadow-lg"
               >
-                Book Your Consultation
-                <ArrowRightIcon className="w-5 h-5 ml-2" />
+                Book a Consultation
               </Link>
             </motion.div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* About Us Section */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="md:w-1/2 text-center md:text-left"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-6 leading-tight">
+                About V Santhosh & Associates
+              </h2>
+              <p className="text-[#474544]/80 text-lg mb-6 leading-relaxed">
+                Established with a vision to provide exceptional financial and advisory services, V Santhosh & Associates is a leading Chartered Accountant firm dedicated to serving individuals and businesses. Our team of experienced professionals offers personalized solutions across various domains, including taxation, auditing, and regulatory compliance.
+              </p>
+              <p className="text-[#474544]/80 text-lg mb-8 leading-relaxed">
+                We are committed to delivering accurate, timely, and strategic advice that helps our clients achieve their financial goals and navigate the complexities of the economic landscape. Our client-centric approach ensures that every solution is tailored to meet unique needs and foster long-term success.
+              </p>
+              <Link
+                to="/about"
+                className="inline-block bg-[#474544] text-white hover:bg-[#333130] px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300"
+              >
+                Learn More About Us
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="md:w-1/2"
+            >
+              <img src="https://picsum.photos/seed/about-us/600/400" alt="About Us" className="rounded-xl shadow-lg w-full h-auto object-cover" />
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Services Overview Section */}
+        <section className="py-16 md:py-24 bg-white/80 backdrop-blur-sm">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-6 leading-tight">
+              Our Core Services
+            </h2>
+            <p className="text-[#474544]/80 text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
+              We offer a diverse range of financial and advisory services to cater to all your business needs.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {servicesData.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  title={service.title}
+                  description={service.description}
+                  link={service.link}
+                  category={service.category}
+                  image={service.image}
+                />
+              ))}
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="mt-12"
+            >
+              <Link
+                to="/services"
+                className="inline-block bg-[#D3AF37] text-[#474544] hover:bg-[#C29D2A] px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300 shadow-lg"
+              >
+                View All Services
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-16 md:py-24 bg-[#F2F3EB]">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-6 leading-tight">
+              What Our Clients Say
+            </h2>
+            <p className="text-[#474544]/80 text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
+              Hear from our satisfied clients about their experience with V Santhosh & Associates.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#474544]/10 text-left"
+                >
+                  <p className="text-[#474544]/80 mb-4 italic leading-relaxed">\"{testimonial.quote}\"</p>
+                  <p className="font-semibold text-[#474544]">{testimonial.author}</p>
+                  <p className="text-sm text-[#474544]/70">{testimonial.designation}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 md:py-24 bg-white/80 backdrop-blur-sm">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-6 leading-tight">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-[#474544]/80 text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
+              Find answers to common questions about our services.
+            </p>
+            <div className="max-w-3xl mx-auto space-y-4">
+              {faqs.map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-[#F2F3EB] p-6 rounded-lg shadow-sm text-left border border-[#474544]/10"
+                >
+                  <h3 className="font-semibold text-[#474544] text-lg mb-2">{faq.question}</h3>
+                  <p className="text-[#474544]/80">{faq.answer}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   );
-}
+};
+
+export default Home;
