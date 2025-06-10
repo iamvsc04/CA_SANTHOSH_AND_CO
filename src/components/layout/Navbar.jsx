@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import navLogo from '../../assets/navlogo.png';
+import navLogo from '../../assets/navlogo.webp';
 
 export const servicesData = {
   Registrations: [
