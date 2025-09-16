@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import SEO from '../components/SEO';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 const About = () => {
   const founder = {
@@ -39,7 +39,11 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-[#474544]/80 text-lg max-w-3xl mx-auto leading-relaxed"
             >
-              Established with a vision to provide exceptional financial and advisory services, V Santhosh & Associates is a leading Chartered Accountant firm dedicated to serving individuals and businesses. Our founder brings extensive experience in various domains, including taxation, auditing, and regulatory compliance.
+              Established with a vision to provide exceptional financial and
+              advisory services, V Santhosh & Associates is a leading Chartered
+              Accountant firm dedicated to serving individuals and businesses.
+              Our founder brings extensive experience in various domains,
+              including taxation, auditing, and regulatory compliance.
             </motion.p>
           </div>
 
@@ -55,9 +59,15 @@ const About = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  <h3 className="text-2xl font-semibold text-[#474544] mb-4">Our Mission</h3>
+                  <h3 className="text-2xl font-semibold text-[#474544] mb-4">
+                    Our Mission
+                  </h3>
                   <p className="text-[#474544]/80 text-lg leading-relaxed">
-                    To empower our clients with comprehensive financial expertise and strategic advice, enabling them to achieve sustainable growth and financial well-being. We are committed to delivering excellence, fostering trust, and building lasting relationships through personalized service.
+                    To empower our clients with comprehensive financial
+                    expertise and strategic advice, enabling them to achieve
+                    sustainable growth and financial well-being. We are
+                    committed to delivering excellence, fostering trust, and
+                    building lasting relationships through personalized service.
                   </p>
                 </motion.div>
                 <motion.div
@@ -65,13 +75,34 @@ const About = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  <h3 className="text-2xl font-semibold text-[#474544] mb-4">Our Values</h3>
+                  <h3 className="text-2xl font-semibold text-[#474544] mb-4">
+                    Our Values
+                  </h3>
                   <ul className="space-y-3 text-[#474544]/80 text-lg leading-relaxed list-disc list-inside">
-                    <li><span className="font-semibold">Integrity:</span> Upholding the highest ethical standards in all our dealings.</li>
-                    <li><span className="font-semibold">Excellence:</span> Striving for superior quality and continuous improvement in our services.</li>
-                    <li><span className="font-semibold">Client-Centricity:</span> Prioritizing client needs and delivering tailored solutions.</li>
-                    <li><span className="font-semibold">Innovation:</span> Embracing new technologies and approaches to provide efficient solutions.</li>
-                    <li><span className="font-semibold">Accountability:</span> Taking responsibility for our actions and commitments.</li>
+                    <li>
+                      <span className="font-semibold">Integrity:</span>{" "}
+                      Upholding the highest ethical standards in all our
+                      dealings.
+                    </li>
+                    <li>
+                      <span className="font-semibold">Excellence:</span>{" "}
+                      Striving for superior quality and continuous improvement
+                      in our services.
+                    </li>
+                    <li>
+                      <span className="font-semibold">Client-Centricity:</span>{" "}
+                      Prioritizing client needs and delivering tailored
+                      solutions.
+                    </li>
+                    <li>
+                      <span className="font-semibold">Innovation:</span>{" "}
+                      Embracing new technologies and approaches to provide
+                      efficient solutions.
+                    </li>
+                    <li>
+                      <span className="font-semibold">Accountability:</span>{" "}
+                      Taking responsibility for our actions and commitments.
+                    </li>
                   </ul>
                 </motion.div>
               </div>
@@ -91,17 +122,23 @@ const About = () => {
                   transition={{ duration: 0.6 }}
                   className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#474544]/10 flex flex-col md:flex-row items-center gap-8"
                 >
-                  <div className="flex-shrink-0">
+                  {/* <div className="flex-shrink-0">
                     <img
                       src={founder.image}
                       alt={founder.name}
                       className="w-48 h-48 rounded-full object-cover border-4 border-[#D3AF37]"
                     />
-                  </div>
+                  </div> */}
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-[#474544] mb-2">{founder.name}</h3>
-                    <p className="text-lg text-[#474544]/70 mb-4">{founder.title}</p>
-                    <p className="text-[#474544]/80 text-lg leading-relaxed">{founder.bio}</p>
+                    <h3 className="text-2xl font-bold text-[#474544] mb-2">
+                      {founder.name}
+                    </h3>
+                    <p className="text-lg text-[#474544]/70 mb-4">
+                      {founder.title}
+                    </p>
+                    <p className="text-[#474544]/80 text-lg leading-relaxed">
+                      {founder.bio}
+                    </p>
                   </div>
                 </motion.div>
               </div>
@@ -115,7 +152,8 @@ const About = () => {
                 Ready to Partner with Us?
               </h3>
               <p className="text-[#474544]/80 mb-6">
-                Contact us today to discuss your financial needs and how we can help you achieve your goals.
+                Contact us today to discuss your financial needs and how we can
+                help you achieve your goals.
               </p>
               <Link
                 to="/book-appointment"
