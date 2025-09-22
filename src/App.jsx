@@ -22,7 +22,7 @@ import Contact from "./pages/Contact";
 import BookAppointment from "./pages/BookAppointment";
 import Gallery from "./pages/Gallery";
 import TaxCalculatorPage from "./pages/TaxCalculatorPage";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+// import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Disclaimer from "./pages/Disclaimer";
 import IncomeTaxFiling from "./pages/IncomeTaxFiling";
@@ -92,7 +92,7 @@ function App() {
                 <Route path="/book-appointment" element={<BookAppointment />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/tax-calculator" element={<TaxCalculatorPage />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
                 <Route
                   path="/terms-and-conditions"
                   element={<TermsAndConditions />}
@@ -171,50 +171,50 @@ function App() {
                 />
                 <Route path="/solutions/nris" element={<NRIs />} />
                 <Route path="*" element={<NotFound />} />
-                <Route
+                {/* <Route
                   path="/services/other/income-tax-scrutiny"
                   element={<IncomeTaxScrutinyServices />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/services/other/gst-scrutiny"
                   element={<GSTScrutinyServices />}
-                />
+                /> */}
                 <Route
                   path="/services/other/appeal-filings"
                   element={<AppealFilings />}
                 />
-                <Route
+                {/* <Route
                   path="/services/other/accounting-services"
                   element={<AccountingServices />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/services/other/book-keeping-services"
                   element={<BookKeepingServices />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/services/other/consultancy-services"
                   element={<ConsultancyServices />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/services/other/financial-advisory-services"
                   element={<FinancialAdvisoryServices />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/services/other/tax-planning-services"
                   element={<TaxPlanningServices />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/services/other/roc-works"
                   element={<ROCWorks />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/services/other/shares-transfers"
                   element={<SharesTransfers />}
                 />
                 <Route
                   path="/services/other/shares-valuation"
                   element={<SharesValuation />}
-                />
+                /> */}
               </Routes>
             </AnimatePresence>
           </main>
