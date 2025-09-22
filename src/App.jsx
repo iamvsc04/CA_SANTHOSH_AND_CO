@@ -48,17 +48,17 @@ import TradeLicense from "./pages/licenses/TradeLicense";
 import FactoryLicense from "./pages/licenses/FactoryLicense";
 import FactoryPlanApproval from "./pages/licenses/FactoryPlanApproval";
 import PollutionBoardApproval from "./pages/licenses/PollutionBoardApproval";
-import IncomeTaxScrutinyServices from "./pages/otherServices/IncomeTaxScrutinyServices";
-import GSTScrutinyServices from "./pages/otherServices/GSTScrutinyServices";
+// import IncomeTaxScrutinyServices from "./pages/otherServices/IncomeTaxScrutinyServices";
+// import GSTScrutinyServices from "./pages/otherServices/GSTScrutinyServices";
 import AppealFilings from "./pages/otherServices/AppealFilings";
-import AccountingServices from "./pages/otherServices/AccountingServices";
-import BookKeepingServices from "./pages/otherServices/BookKeepingServices";
-import ConsultancyServices from "./pages/otherServices/ConsultancyServices";
-import FinancialAdvisoryServices from "./pages/otherServices/FinancialAdvisoryServices";
-import TaxPlanningServices from "./pages/otherServices/TaxPlanningServices";
-import ROCWorks from "./pages/otherServices/ROCWorks";
-import SharesTransfers from "./pages/otherServices/SharesTransfers";
-import SharesValuation from "./pages/otherServices/SharesValuation";
+// import AccountingServices from "./pages/otherServices/AccountingServices";
+// import BookKeepingServices from "./pages/otherServices/BookKeepingServices";
+// import ConsultancyServices from "./pages/otherServices/ConsultancyServices";
+// import FinancialAdvisoryServices from "./pages/otherServices/FinancialAdvisoryServices";
+// import TaxPlanningServices from "./pages/otherServices/TaxPlanningServices";
+// import ROCWorks from "./pages/otherServices/ROCWorks";
+// import SharesTransfers from "./pages/otherServices/SharesTransfers";
+// import SharesValuation from "./pages/otherServices/SharesValuation";
 
 function App() {
   return (
