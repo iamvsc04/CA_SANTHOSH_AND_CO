@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import navLogo from "../../assets/navlogo.webp";
+import navLogo from "../../assets/logo.png";
 
 export const servicesData = {
   Registrations: [
@@ -73,69 +73,69 @@ export const servicesData = {
     {
       name: "Tax Audit",
       description: "Details about Tax Audit.",
-      href: "/services/audit/tax-audit",
+      href: "/services/audit-services/tax-audit",
     },
     {
       name: "Internal Audits",
       description: "Details about Internal Audits.",
-      href: "/services/audit/internal-audits",
+      href: "/services/audit-services/internal-audits",
     },
     {
       name: "Statutory Audits",
       description: "Details about Statutory Audits.",
-      href: "/services/audit/statutory-audits",
+      href: "/services/audit-services/statutory-audits",
     },
     {
       name: "GST Audits",
       description: "Details about GST Audits.",
-      href: "/services/audit/gst-audits",
+      href: "/services/audit-services/gst-audits",
     },
     {
       name: "Concurrent Audits",
       description: "Details about Concurrent Audits.",
-      href: "/services/audit/concurrent-audits",
+      href: "/services/audit-services/concurrent-audits",
     },
     {
       name: "Stock Audits",
       description: "Details about Stock Audits.",
-      href: "/services/audit/stock-audits",
+      href: "/services/audit-services/stock-audits",
     },
   ],
   "Returns Filing": [
     {
       name: "IT Returns",
       description: "Details about IT Returns.",
-      href: "/services/returns/it-returns",
+      href: "/services/returns-filing/it-returns",
     },
     {
       name: "GST Returns",
       description: "Details about GST Returns.",
-      href: "/services/returns/gst-returns",
+      href: "/services/returns-filing/gst-returns",
     },
     {
       name: "ROC Returns",
       description: "Details about ROC Returns.",
-      href: "/services/returns/roc-returns",
+      href: "/services/returns-filing/roc-returns",
     },
     {
       name: "ESI Returns",
       description: "Details about ESI Returns.",
-      href: "/services/returns/esi-returns",
+      href: "/services/returns-filing/esi-returns",
     },
     {
       name: "PF Returns",
       description: "Details about PF Returns.",
-      href: "/services/returns/pf-returns",
+      href: "/services/returns-filing/pf-returns",
     },
     {
       name: "PT Returns",
       description: "Details about PT Returns.",
-      href: "/services/returns/pt-returns",
+      href: "/services/returns-filing/pt-returns",
     },
     {
       name: "TDS Returns",
       description: "Details about TDS Returns.",
-      href: "/services/returns/tds-returns",
+      href: "/services/returns-filing/tds-returns",
     },
   ],
   Compliances: [
@@ -235,7 +235,7 @@ export const servicesData = {
       href: "/services/bank-related/loan-documentation",
     },
   ],
-  "Digital Signature Service": [
+  "Digital Signature Services": [
     {
       name: "Tenders DSC Registration",
       description: "Details about Tenders DSC Registration.",
@@ -441,13 +441,13 @@ export default function Navbar() {
                       </AnimatePresence>
                     </div>
                   ) : (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="text-secondary-600 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors"
-                  >
-                    {item.name}
-                  </Link>
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="text-secondary-600 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors"
+                    >
+                      {item.name}
+                    </Link>
                   )
                 )}
                 <Link to="/book-appointment" className="btn btn-primary">
@@ -524,14 +524,14 @@ export default function Navbar() {
                     </AnimatePresence>
                   </div>
                 ) : (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block px-3 py-2 text-base font-medium text-secondary-600 hover:text-primary-600 hover:bg-secondary-50 rounded-md"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block px-3 py-2 text-base font-medium text-secondary-600 hover:text-primary-600 hover:bg-secondary-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
                 )
               )}
               <Link

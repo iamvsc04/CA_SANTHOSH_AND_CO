@@ -58,46 +58,46 @@ const stats = [
 const Home = () => {
   const servicesData = [
     {
-      title: "GST Registration",
-      description: "Simplify your GST registration process with our expert guidance. We help businesses register for Goods and Services Tax (GST) seamlessly, ensuring compliance and smooth operations.",
-      link: "/services/gst-registration",
+      title: "Registrations",
+      description: "Business registration and incorporation services including GST, Company, Partnership, and MSME registrations.",
+      link: "/services/registrations",
       category: "Registrations",
       image: gstRegistrationImage,
     },
     {
-      title: "MSME/Udyam Registrations",
-      description: "Register your business under MSME/Udyam to avail various government benefits and support schemes. We simplify the registration process for micro, small, and medium enterprises.",
-      link: "/services/registrations/msme-udyam",
-      category: "Registrations",
-      image: msmeImage,
-    },
-    {
-      title: "IEC Code Registration",
-      description: "Obtain your Import Export Code (IEC) registration with our expert assistance. We streamline the process for businesses looking to engage in international trade, ensuring full compliance.",
-      link: "/services/registrations/iec-code",
-      category: "Registrations",
-      image: iecImage,
-    },
-    {
-      title: "Labour License",
-      description: "Ensure compliance with labor laws and regulations by obtaining your Labour License with our expert assistance. We guide businesses through the necessary steps for workforce regulation.",
-      link: "/services/licenses/labour-license",
+      title: "Licenses",
+      description: "Essential business licenses and regulatory approvals including Factory, Trade, and Labour licenses.",
+      link: "/services/licenses",
       category: "Licenses",
       image: labourLicenseImage,
     },
     {
-      title: "Trade License",
-      description: "Obtain your Trade License swiftly with our professional assistance. We guide you through the process to ensure your business operates legally and complies with all local regulations.",
-      link: "/services/licenses/trade-license",
-      category: "Licenses",
+      title: "Audit Services",
+      description: "Professional audit services including Tax, Internal, Statutory, and GST audits for compliance and transparency.",
+      link: "/services/audit-services",
+      category: "Audit Services",
+      image: factoryLicenseImage,
+    },
+    {
+      title: "Returns Filing",
+      description: "Expert tax and regulatory return filing services including IT, GST, ROC, and other statutory returns.",
+      link: "/services/returns-filing",
+      category: "Returns Filing",
       image: tradeLicenseImage,
     },
     {
-      title: "Factory License",
-      description: "Obtain your Factory License to legally operate your manufacturing unit. We guide you through the complete process, ensuring compliance with all regulatory requirements.",
-      link: "/services/licenses/factory-license",
-      category: "Licenses",
-      image: factoryLicenseImage,
+      title: "Compliances",
+      description: "Regulatory compliance services including Advance Tax, ESI, PF, PT, and TDS payments and compliance.",
+      link: "/services/compliances",
+      category: "Compliances",
+      image: msmeImage,
+    },
+    {
+      title: "Other Services",
+      description: "Additional services including Tax Planning, Financial Advisory, Consultancy, and specialized business services.",
+      link: "/services/other",
+      category: "Other Services",
+      image: iecImage,
     },
   ];
 
@@ -137,10 +137,10 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Home - V Santhosh & Associates"
-        description="V Santhosh & Associates offers comprehensive financial solutions, including tax, audit, and compliance services. Your trusted partner for business growth and financial stability."
+        title="Home - E V & Associates"
+        description="E V & Associates offers comprehensive financial solutions, including tax, audit, and compliance services. Your trusted partner for business growth and financial stability."
         keywords="CA firm, financial services, tax consulting, audit services, business registration, GST, income tax, financial advisory"
-        canonicalUrl="https://VSanthoshAndAssociates.in/"
+        canonicalUrl="https://evassociates.in/"
         ogImage="https://picsum.photos/seed/home-page/1024/576"
       />
       <div className="bg-[#F2F3EB]">
@@ -164,7 +164,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90"
             >
-              V Santhosh & Associates: Charting Your Path to Financial Success with Expert Tax, Audit, and Compliance Services.
+              E V & Associates: Charting Your Path to Financial Success with Expert Tax, Audit, and Compliance Services.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

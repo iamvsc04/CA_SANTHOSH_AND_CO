@@ -44,48 +44,48 @@ const Services = () => {
           title: "GST Registration",
           description:
             "Simplify your GST registration process with our expert guidance.",
-          link: "/services/gst-registration",
+          link: "/services/registrations/gst-registration",
           image: gstRegistrationImage,
         },
         {
           title: "Company Registration",
           description:
             "Start your business journey with proper company registration.",
-          link: "/services/company-registration",
+          link: "/services/registrations/company-incorporation",
           image: companyRegistrationImage,
         },
         {
           title: "Partnership Firm Registration",
           description:
             "Register your partnership firm with ease and confidence.",
-          link: "/services/partnership-registration",
+          link: "/services/registrations/partnership-firm",
           image: partnershipRegistrationImage,
         },
         {
           title: "Proprietorship Registration",
           description: "Establish your sole proprietorship business legally.",
-          link: "/services/proprietorship-registration",
+          link: "/services/registrations/proprietorship-firm",
           image: proprietorshipRegistrationImage,
         },
         {
           title: "LLP Registration",
           description:
             "Register your Limited Liability Partnership with expert guidance.",
-          link: "/services/llp-registration",
+          link: "/services/registrations/llp-registration",
           image: llpRegistrationImage,
         },
         {
           title: "MSME/Udyam Registration",
           description:
             "Register your business under MSME/Udyam for government benefits.",
-          link: "/services/msme-registration",
+          link: "/services/registrations/msme-udyam",
           image: msmeImage,
         },
         {
           title: "IEC Code Registration",
           description:
             "Obtain your Import Export Code for international trade.",
-          link: "/services/iec-registration",
+          link: "/services/registrations/iec-code",
           image: iecImage,
         },
       ],
@@ -101,34 +101,34 @@ const Services = () => {
           title: "Factory License",
           description:
             "Obtain your Factory License for manufacturing operations.",
-          link: "/services/factory-license",
+          link: "/services/licenses/factory-license",
           image: factoryLicenseImage,
         },
         {
           title: "Trade License",
           description: "Get your Trade License for legal business operations.",
-          link: "/services/trade-license",
+          link: "/services/licenses/trade-license",
           image: tradeLicenseImage,
         },
         {
           title: "Labour License",
           description:
             "Ensure compliance with labor laws through proper licensing.",
-          link: "/services/labour-license",
+          link: "/services/licenses/labour-license",
           image: labourLicenseImage,
         },
         {
           title: "Pollution Board Approval",
           description:
             "Obtain necessary environmental clearances for your business.",
-          link: "/services/pollution-board-approval",
+          link: "/services/licenses/pollution-board-approval",
           image: pollutionBoardImage,
         },
         {
           title: "Factory Plan Approval",
           description:
             "Get your factory plans approved by relevant authorities.",
-          link: "/services/factory-plan-approval",
+          link: "/services/licenses/factory-plan-approval",
           image: factoryPlanImage,
         },
       ],
@@ -138,7 +138,7 @@ const Services = () => {
       description: "Explore Audit Services and more detailed services.",
       link: "/services/audit-services",
       category: "Audit Services",
-      image: auditServiceImage, // Placeholder image
+      image: auditServiceImage,
       subServices: [
         {
           title: "Tax Audit",
@@ -150,31 +150,31 @@ const Services = () => {
           title: "Internal Audit",
           description:
             "Professional Internal Audit services for organizations.",
-          link: "/services/audit-services/internal-audit",
+          link: "/services/audit-services/internal-audits",
           image: auditServiceImage,
         },
         {
           title: "Statutory Audit",
           description: "Statutory Audit services for companies and compliance.",
-          link: "/services/audit-services/statutory-audit",
+          link: "/services/audit-services/statutory-audits",
           image: auditServiceImage,
         },
         {
           title: "GST Audit",
           description: "Expert GST Audit services for GST compliance.",
-          link: "/services/audit-services/gst-audit",
+          link: "/services/audit-services/gst-audits",
           image: auditServiceImage,
         },
         {
           title: "Concurrent Audit",
           description: "Concurrent Audit services for real-time compliance.",
-          link: "/services/audit-services/concurrent-audit",
+          link: "/services/audit-services/concurrent-audits",
           image: auditServiceImage,
         },
         {
           title: "Stock Audit",
           description: "Stock Audit services for inventory accuracy.",
-          link: "/services/audit-services/stock-audit",
+          link: "/services/audit-services/stock-audits",
           image: auditServiceImage,
         },
       ],
@@ -184,48 +184,48 @@ const Services = () => {
       description: "Explore Returns Filing and more detailed services.",
       link: "/services/returns-filing",
       category: "Returns Filing",
-      image: taxReturnImage, // Placeholder image
+      image: taxReturnImage,
       subServices: [
         {
           title: "IT Returns",
           description: "Details about IT Returns.",
-          link: "/services/returns/it-returns",
+          link: "/services/returns-filing/it-returns",
           image: taxReturnImage,
         },
         {
           title: "GST Returns",
           description: "Details about GST Returns.",
-          link: "/services/returns/gst-returns",
+          link: "/services/returns-filing/gst-returns",
           image: taxReturnImage,
         },
         {
           title: "ROC Returns",
           description: "Details about ROC Returns.",
-          link: "/services/returns/roc-returns",
+          link: "/services/returns-filing/roc-returns",
           image: taxReturnImage,
         },
         {
           title: "ESI Returns",
           description: "Details about ESI Returns.",
-          link: "/services/returns/esi-returns",
+          link: "/services/returns-filing/esi-returns",
           image: taxReturnImage,
         },
         {
           title: "PF Returns",
           description: "Details about PF Returns.",
-          link: "/services/returns/pf-returns",
+          link: "/services/returns-filing/pf-returns",
           image: taxReturnImage,
         },
         {
           title: "PT Returns",
           description: "Details about PT Returns.",
-          link: "/services/returns/pt-returns",
+          link: "/services/returns-filing/pt-returns",
           image: taxReturnImage,
         },
         {
           title: "TDS Returns",
           description: "Details about TDS Returns.",
-          link: "/services/returns/tds-returns",
+          link: "/services/returns-filing/tds-returns",
           image: taxReturnImage,
         },
       ],
@@ -235,7 +235,7 @@ const Services = () => {
       description: "Explore Compliances and more detailed services.",
       link: "/services/compliances",
       category: "Compliances",
-      image: compliancesImage, // Placeholder image
+      image: compliancesImage,
       subServices: [
         {
           title: "Advance Tax Payment",
@@ -274,7 +274,7 @@ const Services = () => {
       description: "Explore Certifications and more detailed services.",
       link: "/services/certifications",
       category: "Certifications",
-      image: certificationImage, // Placeholder image
+      image: certificationImage,
       subServices: [
         {
           title: "Turnover Certificate",
@@ -320,9 +320,9 @@ const Services = () => {
     {
       title: "Bank Related Services",
       description: "Explore Bank Related Services and more detailed services.",
-      link: "/services/bank-related-services",
+      link: "/services/bank-related",
       category: "Bank Related Services",
-      image: BankServicesImage, // Placeholder image
+      image: BankServicesImage,
       subServices: [
         {
           title: "Project Reports",
@@ -369,12 +369,12 @@ const Services = () => {
       ],
     },
     {
-      title: "Digital Signature Service",
+      title: "Digital Signature Services",
       description:
-        "Explore Digital Signature Service and more detailed services.",
-      link: "/services/digital-signature-service",
-      category: "Digital Signature Service",
-      image: digitalSignatureImage, // Placeholder image
+        "Explore Digital Signature Services and more detailed services.",
+      link: "/services/digital-signature",
+      category: "Digital Signature Services",
+      image: digitalSignatureImage,
       subServices: [
         {
           title: "Tenders DSC Registration",
@@ -399,9 +399,9 @@ const Services = () => {
     {
       title: "Application Services",
       description: "Explore Application Services and more detailed services.",
-      link: "/services/application-services",
+      link: "/services/application",
       category: "Application Services",
-      image: applicationImage, // Placeholder image
+      image: applicationImage,
       subServices: [
         {
           title: "PAN Applications",
@@ -432,9 +432,9 @@ const Services = () => {
     {
       title: "Subsidy Services",
       description: "Explore Subsidy Services and more detailed services.",
-      link: "/services/subsidy-services",
+      link: "/services/subsidy",
       category: "Subsidy Services",
-      image: subsidyImage, // Placeholder image
+      image: subsidyImage,
       subServices: [
         {
           title: "Central Subsidy",
@@ -453,9 +453,9 @@ const Services = () => {
     {
       title: "Other Services",
       description: "Explore Other Services and more detailed services.",
-      link: "/services/other-services",
+      link: "/services/other",
       category: "Other Services",
-      image: services, // Placeholder image
+      image: services,
       subServices: [
         {
           title: "Income Tax Scrutiny Services",
