@@ -191,10 +191,10 @@ const Home = () => {
               className="md:w-1/2 text-center md:text-left"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-6 leading-tight">
-                About V Santhosh & Associates
+                About E V & Associates
               </h2>
               <p className="text-[#474544]/80 text-lg mb-6 leading-relaxed">
-                Established with a vision to provide exceptional financial and advisory services, V Santhosh & Associates is a leading Chartered Accountant firm dedicated to serving individuals and businesses. Our team of experienced professionals offers personalized solutions across various domains, including taxation, auditing, and regulatory compliance.
+                Established with a vision to provide exceptional financial and advisory services, E V & Associates is a leading Chartered Accountant firm dedicated to serving individuals and businesses. Our team of experienced professionals offers personalized solutions across various domains, including taxation, auditing, and regulatory compliance.
               </p>
               <p className="text-[#474544]/80 text-lg mb-8 leading-relaxed">
                 We are committed to delivering accurate, timely, and strategic advice that helps our clients achieve their financial goals and navigate the complexities of the economic landscape. Our client-centric approach ensures that every solution is tailored to meet unique needs and foster long-term success.
@@ -259,9 +259,9 @@ const Home = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-[#474544] mb-6 leading-tight">
               What Our Clients Say
-            </h2>
+            </h2> 
             <p className="text-[#474544]/80 text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
-              Hear from our satisfied clients about their experience with V Santhosh & Associates.
+              Hear from our satisfied clients about their experience with E V & Associates.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (

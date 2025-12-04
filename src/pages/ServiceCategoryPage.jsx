@@ -56,9 +56,9 @@ const ServiceCategoryPage = () => {
     <>
       <SEO
         title={`${categoryKey} - Professional Services`}
-        description={`Expert ${categoryKey.toLowerCase()} services by V Santhosh & Associates. Professional, reliable, and comprehensive solutions for your business needs.`}
+        description={`Expert ${categoryKey.toLowerCase()} services by E V & Associates. Professional, reliable, and comprehensive solutions for your business needs.`}
         keywords={`${categoryKey.toLowerCase()}, business services, professional services, CA services, Nalgonda`}
-        canonicalUrl={`https://yourdomain.com/services/${categoryName}`}
+        canonicalUrl={`https://evassociates.in/services/${categoryName}`}
         ogImage="https://picsum.photos/seed/service-category/1024/576"
       />
       

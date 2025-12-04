@@ -10,7 +10,7 @@ const IECRegistration = () => {
         title="IEC Registration - Import Export Code for Global Trade"
         description="Obtain your Import Export Code (IEC) registration with our expert assistance. We streamline the process for businesses looking to engage in international trade, ensuring full compliance."
         keywords="IEC registration, Import Export Code, international trade, export business, import business, foreign trade, trade license"
-        canonicalUrl="https://yourdomain.com/services/registrations/iec-code"
+          canonicalUrl="https://evassociates.in/services/registrations/iec-code"
         ogImage="https://picsum.photos/seed/iec-registration/1024/576"
       />
       <div className="py-16 bg-[#F2F3EB]">

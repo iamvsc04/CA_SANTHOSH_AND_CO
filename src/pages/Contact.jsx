@@ -144,7 +144,7 @@ const Contact = () => {
             >
               Our Office Locations
             </motion.h2>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Main Branch - Hyderabad */}
               <motion.div
@@ -165,13 +165,28 @@ const Contact = () => {
                   E V & Associates
                 </h3>
                 <p className="text-[#474544]/80 leading-relaxed mb-4">
-                  LALITHA NIVAS, H.NO.8-3-430/1/20, near BSNL Office Ameerpet, 
+                  LALITHA NIVAS, H.NO.8-3-430/1/20, near BSNL Office Ameerpet,
                   Ali Nagar, Yella Reddy Guda, Hyderabad, Telangana 500038
                 </p>
                 <div className="flex items-center text-sm text-[#474544]/70">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
                   Hyderabad, Telangana
                 </div>
@@ -196,13 +211,28 @@ const Contact = () => {
                   E V & Associates
                 </h3>
                 <p className="text-[#474544]/80 leading-relaxed mb-4">
-                  4-2-1465, Ramagiri Rd, opp. RDO office, near Clock Tower Road, 
+                  4-2-1465, Ramagiri Rd, opp. RDO office, near Clock Tower Road,
                   Savarkar Nagar, Nalgonda, Telangana 508001
                 </p>
                 <div className="flex items-center text-sm text-[#474544]/70">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
                   Nalgonda, Telangana
                 </div>
@@ -319,50 +349,22 @@ const Contact = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-16 max-w-6xl mx-auto"
+            className="mt-16 bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-[#474544]/10"
           >
-            <h2 className="text-2xl font-bold text-[#474544] mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#474544] mb-6 text-center">
               Find Us on Map
             </h2>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Main Branch Map - Hyderabad */}
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#474544]/10">
-                <h3 className="text-xl font-semibold text-[#474544] mb-4 text-center">
-                  Main Branch - Hyderabad
-                </h3>
-                <div className="aspect-w-16 aspect-h-9 rounded-md overflow-hidden">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30452.1077017804!2d78.40792327910158!3d17.435121600000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb912ae8e9f8a9%3A0x122c6fbdfca7ea29!2sV%20REDDY%20%26%20CO!5e0!3m2!1sen!2sin!4v1759603688435!5m2!1sen!2sin"
-                    width="100%"
-                    height="300"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="E V & Associates Branch Office - Nalgonda"
-                  ></iframe>
-                </div>
-              </div>
-
-              {/* Branch Office Map - Nalgonda */}
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-[#474544]/10">
-                <h3 className="text-xl font-semibold text-[#474544] mb-4 text-center">
-                  Branch Office - Nalgonda
-                </h3>
-                <div className="aspect-w-16 aspect-h-9 rounded-md overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7628.380221077051!2d79.2679!3d17.0544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb291bf8db7fa9%3A0xe219d5b27afe1efd!2sNalgonda%2C%20Telangana!5e0!3m2!1sen!2sin!4v1749571252826!5m2!1sen!2sin"
-                    width="100%"
-                    height="300"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="E V & Associates Branch Office - Nalgonda"
-                  ></iframe>
-                </div>
-              </div>
+            <div className="aspect-w-16 aspect-h-9 rounded-md overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7628.380221077051!2d79.26220431326864!3d17.063351084807607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb291bf8db7fa9%3A0xe219d5b27afe1efd!2sV%20Santhosh%20and%20Associates!5e0!3m2!1sen!2sin!4v1749571252826!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="E V & Associates Location"
+              ></iframe>
             </div>
           </motion.div>
         </div>

@@ -14,10 +14,10 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About Us - V Santhosh & Associates, Chartered Accountants"
-        description="Learn about V Santhosh & Associates, a leading CA firm in Nalgonda providing expert financial solutions, tax, audit, and compliance services. Discover our mission, values, and experienced founder."
+        title="About Us - E V & Associates, Chartered Accountants"
+        description="Learn about E V & Associates, a leading CA firm in Nalgonda providing expert financial solutions, tax, audit, and compliance services. Discover our mission, values, and experienced founder."
         keywords="about CA firm, V Santhosh & Associates, Chartered Accountant Nalgonda, financial experts, tax consultants, audit firm, business advisory"
-        canonicalUrl="https://VSanthoshandAssociates.in/about"
+        canonicalUrl="https://evassociates.in/about"
         ogImage="https://picsum.photos/seed/about-us-page/1024/576"
       />
       <div className="py-16 bg-[#F2F3EB]">
@@ -30,7 +30,7 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="text-4xl md:text-5xl font-bold text-[#474544] tracking-wider uppercase mb-4"
             >
-              About V Santhosh & Associates
+              About E V & Associates
             </motion.h1>
             <div className="h-0.5 bg-gradient-to-r from-transparent via-[#474544] to-transparent mx-auto mb-8 w-20" />
             <motion.p
@@ -40,7 +40,7 @@ const About = () => {
               className="text-[#474544]/80 text-lg max-w-3xl mx-auto leading-relaxed"
             >
               Established with a vision to provide exceptional financial and
-              advisory services, V Santhosh & Associates is a leading Chartered
+              advisory services, E V & Associates is a leading Chartered
               Accountant firm dedicated to serving individuals and businesses.
               Our founder brings extensive experience in various domains,
               including taxation, auditing, and regulatory compliance.
