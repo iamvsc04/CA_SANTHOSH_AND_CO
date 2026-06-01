@@ -46,7 +46,7 @@ const Contact = () => {
       const response = await emailjs.send(
         EMAILJS_CONFIG.SERVICE_ID,
         EMAILJS_CONFIG.CONTACT_TEMPLATE_ID,
-        templateParams
+        templateParams,
       );
 
       console.log("EmailJS Response:", response);
@@ -60,7 +60,7 @@ const Contact = () => {
     } catch (error) {
       console.error("Detailed error:", error);
       setSubmitError(
-        `Failed to send message: ${error.message || "Please try again later."}`
+        `Failed to send message: ${error.message || "Please try again later."}`,
       );
     } finally {
       setIsSubmitting(false);
@@ -165,6 +165,52 @@ const Contact = () => {
                   E V & Associates
                 </h3>
                 <p className="text-[#474544]/80 leading-relaxed mb-4">
+                  6-2-1456,Opp BSNL Office,Ramagiri Road, Nalgonda, Telangana
+                  508001
+                </p>
+                <div className="flex items-center text-sm text-[#474544]/70">
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  Nalgonda, Telangana
+                </div>
+              </motion.div>
+
+              {/* Branch Office - Nalgonda */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-[#474544]/10 relative"
+              >
+                <div className="absolute top-4 right-4">
+                  <span className="bg-[#474544] text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Branch Office
+                  </span>
+                </div>
+                <div className="w-12 h-12 bg-[#474544]/10 rounded-lg flex items-center justify-center mb-6">
+                  <MapPinIcon className="w-6 h-6 text-[#474544]" />
+                </div>
+                <h3 className="text-2xl font-semibold text-[#474544] mb-4">
+                  E V & Associates
+                </h3>
+                <p className="text-[#474544]/80 leading-relaxed mb-4">
                   LALITHA NIVAS, H.NO.8-3-430/1/20, near BSNL Office Ameerpet,
                   Ali Nagar, Yella Reddy Guda, Hyderabad, Telangana 500038
                 </p>
@@ -189,52 +235,6 @@ const Contact = () => {
                     />
                   </svg>
                   Hyderabad, Telangana
-                </div>
-              </motion.div>
-
-              {/* Branch Office - Nalgonda */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-[#474544]/10 relative"
-              >
-                <div className="absolute top-4 right-4">
-                  <span className="bg-[#474544] text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Branch Office
-                  </span>
-                </div>
-                <div className="w-12 h-12 bg-[#474544]/10 rounded-lg flex items-center justify-center mb-6">
-                  <MapPinIcon className="w-6 h-6 text-[#474544]" />
-                </div>
-                <h3 className="text-2xl font-semibold text-[#474544] mb-4">
-                  E V & Associates
-                </h3>
-                <p className="text-[#474544]/80 leading-relaxed mb-4">
-                  4-2-1465, Ramagiri Rd, opp. RDO office, near Clock Tower Road,
-                  Savarkar Nagar, Nalgonda, Telangana 508001
-                </p>
-                <div className="flex items-center text-sm text-[#474544]/70">
-                  <svg
-                    className="w-4 h-4 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  Nalgonda, Telangana
                 </div>
               </motion.div>
             </div>
